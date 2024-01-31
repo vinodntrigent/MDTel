@@ -239,7 +239,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Care Manager
+                Appointment
               </li>
             </ol>
           </nav>
@@ -248,61 +248,46 @@
               <div class="card">
                 <div class="card-body">
                   <div class="card-title d-flex justify-content-between align-items-center">
-                    <h5>Care Manager</h5>
+                    <h5>Appointment</h5>
                     <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">
-                      <i class="fa fa-plus me-2 fs-5"></i>Add Member
+                      data-bs-target="#addModal">
+                      <i class="fa fa-plus me-2 fs-5"></i>Add Appointment
                     </button>
                   </div>
                   <div class="table-responsive care-manager-table">
                     <table class="table table-bordered table-striped table-hover">
                       <thead>
                         <tr class="text-white">
-                          <th>Organization</th>
-                          <th>Provider Name</th>
-                          <th>Provider Type</th>
-                          <th>Contact Number</th>
-                          <th>Status</th>
-                          <th>From Date</th>
-                          <th>End Date</th>
+                          <th>Visit<i class="mdi mdi-menu-down"></i></th>
+                          <th>Appt Date<i class="mdi mdi-menu-down"></i></th>
+                          <th>Appt Time<i class="mdi mdi-menu-down"></i></th>
+                          <th>ICD 10<i class="mdi mdi-menu-down"></i></th>
+                          <th>CPT code<i class="mdi mdi-menu-down"></i></th>
+                          <th>Status<i class="mdi mdi-menu-down"></i></th>
+                          <th>Reason/Appt Type<i class="mdi mdi-menu-down"></i></th>
+                          <th>Reschedule Date<i class="mdi mdi-menu-down"></i></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
+                          <td>visit 1</td>
+                          <td>02/01/2023</td>
+                          <td>02:30 PM</td>
+                          <td>8765432</td>
+                          <td>9876544</td>
+                          <td class="text-center"><button type="button" class="btn btn-warning btn-sm">Pending</button></td>
+                          <td>Annual Exam</td>
+                          <td>03/01/2023</td>
                         </tr>
                         <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
+                            <td>visit 2</td>
+                            <td>02/01/2023</td>
+                            <td>02:30 PM</td>
+                            <td>123456</td>
+                            <td>8766552</td>
+                            <td class="text-center"><button type="button" class="btn btn-warning btn-sm text-center px-3">Seen</button></td>
+                            <td>Annual Physical Exam</td>
+                            <td>03/01/2023</td>
                         </tr>
                       </tbody>
                     </table>
@@ -324,50 +309,15 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h6 class="modal-title" id="exampleModalLabel">Add Member</h6>
+              <h6 class="modal-title" id="addModalLabel">Add Appointment</h6>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3">
-                <div class="col-lg-4 col-sm-6">
-                  <label for="organization">Organization</label>
-                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <label for="provider-name">Provider Name</label>
-                  <input type="password" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <label for="provider-type">Provider Type</label>
-                  <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="contact-number">Contact Number</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="status">Status</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="from-date">From Date</label>
-                  <input type="date" class="form-control form-control-sm" id="from-date" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="to-date">To Date</label>
-                  <input type="date" class="form-control form-control-sm" id="to-date" />
-                </div>
-              </form>
+              TBD
             </div>
             <div class="modal-footer">
               <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">

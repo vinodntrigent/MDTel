@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>MDTel</title>
-
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" />
   <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
@@ -239,7 +238,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Care Manager
+                Case Notes
               </li>
             </ol>
           </nav>
@@ -247,65 +246,40 @@
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <div class="card-title d-flex justify-content-between align-items-center">
-                    <h5>Care Manager</h5>
-                    <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">
-                      <i class="fa fa-plus me-2 fs-5"></i>Add Member
-                    </button>
+                  <div class="card-title">
+                    <h5>Case Notes</h5>
                   </div>
-                  <div class="table-responsive care-manager-table">
-                    <table class="table table-bordered table-striped table-hover">
-                      <thead>
-                        <tr class="text-white">
-                          <th>Organization</th>
-                          <th>Provider Name</th>
-                          <th>Provider Type</th>
-                          <th>Contact Number</th>
-                          <th>Status</th>
-                          <th>From Date</th>
-                          <th>End Date</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>Org 1</td>
-                          <td>John</td>
-                          <td>Type 1</td>
-                          <td>xxx-xxx-xxxx</td>
-                          <td>Active</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="accordion accordion-flush " id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -322,64 +296,6 @@
         </footer>
         
       </div>
-
-      <!-- Modal -->
-      <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h6 class="modal-title" id="exampleModalLabel">Add Member</h6>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form class="row g-3">
-                <div class="col-lg-4 col-sm-6">
-                  <label for="organization">Organization</label>
-                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <label for="provider-name">Provider Name</label>
-                  <input type="password" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <label for="provider-type">Provider Type</label>
-                  <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="contact-number">Contact Number</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="status">Status</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="from-date">From Date</label>
-                  <input type="date" class="form-control form-control-sm" id="from-date" />
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="to-date">To Date</label>
-                  <input type="date" class="form-control form-control-sm" id="to-date" />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-                Close
-              </button>
-              <button type="button" class="btn btn-primary btn-sm ">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
@@ -388,8 +304,7 @@
   <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/vendors/js/perfect-scrollbar.min.js"></script>
-  <script src="assets/js/off-canvas.js"></script> 
-
+  <script src="assets/js/off-canvas.js"></script>
   <script src="assets/js/hoverable-collapse.js"></script>
   <script src="assets/js/misc.js"></script>
 </body>
