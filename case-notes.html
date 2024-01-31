@@ -253,33 +253,156 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Accordion Item #1
+                          Case Note Details
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        <div class="accordion-body">Case Note Details</div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accordion Item #2
+                          Chief Complaints
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">Chief Complaints</div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Accordion Item #3
+                          Health Concerns
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div class="accordion-body">Health Concerns</div>
                       </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Vitals
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Vitals</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                           Medications
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="d-flex justify-content-end mb-2">
+                                <button class="btn btn-primary btn-sm " data-bs-toggle="modal"
+                                data-bs-target="#addModal">+ Add</button>
+                            </div>
+                            <div class="table-responsive care-manager-table">
+                                <table class="table table-bordered table-striped table-hover">
+                                  <thead>
+                                    <tr class="text-white">
+                                      <th>Medication Name</th>
+                                      <th>SIG</th>
+                                      <th>Prescriber's Name</th>
+                                      <th>Start Date</th>
+                                      <th>Stop Date</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Heights</td>
+                                      <td>67 in</td>
+                                      <td>PRE 1</td>
+                                      <td>MM/DD/YYYY</td>
+                                      <td>MM/DD/YYYY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weights</td>
+                                        <td>172 lb</td>
+                                        <td>PRE 2</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>BMI</td>
+                                        <td>26.94</td>
+                                        <td>PRE 3</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>BP</td>
+                                        <td>137/80 mmHg</td>
+                                        <td>PRE 4</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Pulse</td>
+                                        <td>80 bpm</td>
+                                        <td>PRE 5</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Temperature</td>
+                                        <td>98.4^F</td>
+                                        <td>PRE 6</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Respiratory Rate</td>
+                                        <td>17 bpm</td>
+                                        <td>PRE 7</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>OZ Saturation</td>
+                                        <td>98 %</td>
+                                        <td>PRE 8</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Pain</td>
+                                        <td>0</td>
+                                        <td>PRE 9</td>
+                                        <td>MM/DD/YYYY</td>
+                                        <td>MM/DD/YYYY</td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Assessments
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Assessments</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed bg-primary text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Plan
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse bg-info" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Plan</div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>
@@ -294,9 +417,54 @@
               © MD Tel. All Rights Reserved</span>
           </div>
         </footer>
-        
+        <!-- partial -->
       </div>
       <!-- main-panel ends -->
+    </div>
+     <!-- Modal -->
+     <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Add Medications</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-12">
+                  <label for="status">Medication Name</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Select</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                  </select>
+                </div>
+              <div class="col-12">
+                <label for="provider-name">Prescriber's Name</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-12">
+                <label for="from-date">Start Date</label>
+                <input type="date" class="form-control form-control-sm"  />
+              </div>
+              <div class="col-12">
+                <label for="to-date">Stop Date</label>
+                <input type="date" class="form-control form-control-sm"  />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary btn-sm px-5">
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- page-body-wrapper ends -->
   </div>
