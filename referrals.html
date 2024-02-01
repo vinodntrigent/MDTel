@@ -311,7 +311,7 @@
                         <h5>Referral Out</h5>
                         <div class="d-flex">
                         <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                          data-bs-target="#addModal">
+                          data-bs-target="#addModal2">
                           <i class="fa fa-plus me-2 fs-5"></i>Add Referral-Out
                         </button>
                         </div>
@@ -368,15 +368,574 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
           <div class="modal-content">
             <div class="modal-header">
-              <h6 class="modal-title" id="addModalLabel">Referral</h6>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h6 class="modal-title" id="exampleModalLabel">Add Referral-in</h6>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              TBD
+              <form class="row g-3">
+                <div class="col-lg-6 col-sm-6">
+                  <label for="organization">Referral#</label>
+                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Referral Status</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="provider-name">Referred To<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Search" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="provider-type">Referred By<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Search" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                </div>
+                <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="referredby">
+                    <div class="col-lg-2 col-sm-6">
+                      <label for="organization">Title</label>
+                      <input type="text" class="form-control form-control-sm" id="organization" placeholder="Title" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                      <label for="provider-name">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Enter your name" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                      <label for="provider-type">Organization</label>
+                      <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Enter Organization" />
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                      <label for="contact-number">Address 1<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 1" />
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                      <label for="contact-number">Address 2<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 2" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="contact-number">Country<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Country" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="state">State<span class="text-danger">*</span></label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected class="text-muted">State</option>
+                        <option value="Active">Active</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Delayed">Delayed</option>
+                        <option value="completed">completed</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">City<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="City" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="state">Zip Code<span class="text-danger">*</span></label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected class="text-muted">Zip Code</option>
+                        <option value="Active">Active</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Delayed">Delayed</option>
+                        <option value="completed">completed</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">Contact Number</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">Email</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Fax</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Other</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Office</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <label for="city">NPI</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="NPI" />
+                      <a type="button" class="text-primary text-decoration-none d-flex justify-content-end align-items-center" ><small>NPI registry</small></a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Practice</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Practice" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Taxonomy</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Taxonomy" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Speciality</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Speciality" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">UPIN</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="UPIN" />
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="btn btn-danger btn-sm " >
+                        Delete
+                      </button>
+                      <div>
+                        <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm ">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="from-date">Effective Date</label>
+                  <input type="date" class="form-control form-control-sm" id="from-date" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="search">ICD 10</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Search" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Procedure Codes</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Auth Status</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="auth">Autharization</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="status">INS Carrier</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="auth">Organization</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a>
+                </div>
+                <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="addorganization">
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="organization">Oganization Name</label>
+                    <input type="text" class="form-control form-control-sm" id="organization" placeholder="Enter Name" />
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="state">Organization Type</label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option selected class="text-muted">State</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="provider-name">Address 1<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Address 1" />
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="provider-type">Address 2</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Address 2" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="contact-number">Country<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Country" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="state">State<span class="text-danger">*</span></label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option selected class="text-muted">State</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="contact-number">City<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="City" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="state">Zip Code<span class="text-danger">*</span></label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option  class="text-muted">Zip Code</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="city">Contact Number</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="city">Email</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org ID</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org NPI</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org CIA</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger btn-sm " >
+                      Delete
+                    </button>
+                    <div>
+                      <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary btn-sm ">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+              </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="contact-number">Referral Reason</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="contact-number">Add Notes</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary btn-sm ">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal  fade" id="addModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="exampleModalLabel">Add Referral-Out</h6>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-lg-6 col-sm-6">
+                  <label for="organization">Referral#</label>
+                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Referral Status</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="provider-name">Referred To<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Search" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="provider-type">Referred By<span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Search" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                </div>
+                <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="referredby">
+                    <div class="col-lg-2 col-sm-6">
+                      <label for="organization">Title</label>
+                      <input type="text" class="form-control form-control-sm" id="organization" placeholder="Title" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                      <label for="provider-name">Name</label>
+                      <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Enter your name" />
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                      <label for="provider-type">Organization</label>
+                      <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Enter Organization" />
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                      <label for="contact-number">Address 1<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 1" />
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                      <label for="contact-number">Address 2<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 2" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="contact-number">Country<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Country" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="state">State<span class="text-danger">*</span></label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected class="text-muted">State</option>
+                        <option value="Active">Active</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Delayed">Delayed</option>
+                        <option value="completed">completed</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">City<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="City" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="state">Zip Code<span class="text-danger">*</span></label>
+                      <select class="form-select form-select-sm" aria-label="Default select example">
+                        <option selected class="text-muted">Zip Code</option>
+                        <option value="Active">Active</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Delayed">Delayed</option>
+                        <option value="completed">completed</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">Contact Number</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                      <label for="city">Email</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Fax</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Other</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Office</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <label for="city">NPI</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="NPI" />
+                      <a type="button" class="text-primary text-decoration-none d-flex justify-content-end align-items-center"><small>NPI registry</small></a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Practice</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Practice" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Taxonomy</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Taxonomy" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">Speciality</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Speciality" />
+                    </div>
+                    <div class="col-lg-2 col-sm-2">
+                      <label for="city">UPIN</label>
+                      <input type="text" class="form-control form-control-sm" id="from-date" placeholder="UPIN" />
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <button type="button" class="btn btn-danger btn-sm " >
+                        Delete
+                      </button>
+                      <div>
+                        <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm ">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="from-date">Effective Date</label>
+                  <input type="date" class="form-control form-control-sm" id="from-date" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="search">ICD 10</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Search" />
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Procedure Codes</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <label for="status">Auth Status</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="auth">Autharization</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="status">INS Carrier</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="auth">Organization</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a>
+                </div>
+                <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="addorganization">
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="organization">Oganization Name</label>
+                    <input type="text" class="form-control form-control-sm" id="organization" placeholder="Enter Name" />
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="state">Organization Type</label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option selected class="text-muted">State</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="provider-name">Address 1<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Address 1" />
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <label for="provider-type">Address 2</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Address 2" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="contact-number">Country<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Country" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="state">State<span class="text-danger">*</span></label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option selected class="text-muted">State</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="contact-number">City<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="City" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="state">Zip Code<span class="text-danger">*</span></label>
+                    <select class="form-select form-select-sm" aria-label="Default select example">
+                      <option  class="text-muted">Zip Code</option>
+                      <option value="Active">Active</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Delayed">Delayed</option>
+                      <option value="completed">completed</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="city">Contact Number</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <label for="city">Email</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org ID</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org NPI</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="col-lg-2 col-sm-2">
+                    <label for="city">Org CIA</label>
+                    <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger btn-sm " >
+                      Delete
+                    </button>
+                    <div>
+                      <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary btn-sm ">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+              </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="contact-number">Referral Reason</label>
+                  <textarea class="form-control form-control-sm " rows="3"></textarea>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="contact-number">Add Notes</label>
+                  <textarea class="form-control form-control-sm " rows="3"></textarea>
+                </div>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
