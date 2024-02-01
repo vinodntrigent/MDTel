@@ -5,7 +5,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: #333;
 }
+
 /* Custom Styles---- */
+.text-primary{
+  color: #3c7edc !important;
+}
 .bg-info {
   background-color: #eff6ff !important;
 }
@@ -13,9 +17,17 @@ body {
   background-color: #3c7edc !important;
 }
 span.bluetext{
-  color: #0064FF;
+  color: #3c7edc ;
  }
- 
+ .btn-outline-primary{
+  color: #3c7edc !important;
+  background-color: #fff !important;
+  border: 1px solid #3c7edc !important;
+ }
+ .btn-outline-primary:hover{
+  color: #fff !important;
+  background-color: #3c7edc !important;
+ }
 .notification-badge {
   width: 11px;
   height: 12px;
@@ -26,17 +38,19 @@ span.bluetext{
   top: 8px;
   left: 16px;
 }
-
+textarea:focus,input,select{   
+  border-color: .5px solid #3c7edc;
+  box-shadow: none !important;
+  outline: 0 none;
+}
 ::-ms-input-placeholder {
-  /* Edge 12-18 */
   color: #ccc !important;
 }
-
 ::placeholder {
   color: #ccc !important;
 }
-
 /*End of Custom Styles---- */
+
 .container-scroller {
   overflow: hidden !important;
 }
@@ -220,7 +234,7 @@ span.bluetext{
   font-size: 14px !important;
 }
 .dropdown-menu[data-bs-popper] {
-  left: 0px !important;
+  left: -50px !important;
   margin: auto;
 }
 
