@@ -929,3 +929,55 @@ html {
 .accordion-button:focus{
   box-shadow: none !important;
 }
+
+
+/* File Upload ------------ */
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  height:150px;
+  width:100%;
+  border:1px dashed #3c7edc;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.file-upload input {
+  position: absolute;
+  height:150px;
+  width:100%;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  cursor: pointer  !important;
+}
+
+/* Offcanvas filter */
+.offcanvas{
+    width: 25% !important;
+}
+@media (min-width: 700px) and (max-width: 1100px) {
+  .offcanvas{
+    width: 50% !important;
+}
+}
+@media (min-width: 300px) and (max-width: 700px) {
+  .offcanvas{
+    width: 80% !important;
+}
+}
+.time-selection .form-select{
+  --bs-form-select-bg-img:none !important
+}
+
+/* Nab Tabs  */
+.nav-tabs .nav-link{
+  background-color: white;
+  color: #333;
+  border:none;
+}
+.nav-tabs .nav-link.active{
+  background-color: #3c7edc;
+  color: #fff;
+}

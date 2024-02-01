@@ -28,7 +28,7 @@
           <span class="mdi mdi-menu"></span>
         </button>
         <div class="input-group input-group-sm d-none d-md-flex me-5 w-25">
-          <input type="search" class="form-control border-0" aria-label="Sizing example input"
+          <input type="search" class="form-control border-0" aria-label=""
             aria-describedby="inputGroup-sizing-sm" placeholder="Search" />
           <span class="input-group-text bg-white border-0 text-gray">
             <i class="border-0 fa-solid fa-magnifying-glass"></i></span>
@@ -255,49 +255,61 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="card-title d-flex justify-content-between align-items-center">
-                        <h5>Lab results</h5>
-                        <div class="d-flex">
-                          <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1"
-                            href="lab-add.html">
-                            <i class="fa fa-plus me-2 fs-5"></i>Add lab results
-                        </a>
-                        </div>
-
+                        <h5>Diagnostic results</h5>
                       </div>
-                      <div class="table-responsive care-manager-table">
-                        <table class="table table-bordered table-striped table-hover">
-                          <thead>
-                            <tr class="text-white">
-                              <th>Patient Name</th>
-                              <th>Document Name</th>
-                              <th>Upload Document</th>
-                              <th>Lab Type</th>
-                              <th>Date</th>
-                              <th>Provider</th>
-                              <th>Comment</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>John</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Active</td>
-                              <td>Type1</td>
-                              <td>DD/MM/YYYY</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                            </tr>
-                            <tr>
-                              <td>John 1</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Active</td>
-                              <td>Type2</td>
-                              <td>DD/MM/YYYY</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="row  g-0">
+                        <div class="col-lg-6 col-sm-12 bg-light">
+                          <img src="./assets/images/doc-img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-sm-12 bg-light p-3">
+                          <div class="row g-1">
+                            <div class="col-12">
+                              <label>Patient Name</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label>Document Name</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label>Lab type<span class="text-danger">
+                                  *</span></label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label>Date</label>
+                              <input type="date" class="form-control form-control-sm" />
+                            </div>
+                            <div class="col-12">
+                              <label>Provider</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label for="" class="form-label">Comment</label>
+                              <textarea class="form-control form-control-sm" rows="2" placeholder="Text"></textarea>
+                            </div>
+                            <div class="col-12">
+                              <label>Upload Document</label>
+                              <div class="file-upload bg-white rounded">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                  <span class="mdi mdi-cloud-upload-outline fs-1 text-primary"></span>
+                                  <a href="">Browse</a>
+                                  <span>Supported Formats: JPEG,PNG,PDF</span>
+                                </div>
+                                <input type="file" name="file" />
+                              </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end mt-3">
+                              <button class="btn text-danger btn-sm me-3">
+                                  Cancel
+                              </button>
+                              <button class="btn btn-primary btn-sm px-4">
+                                  Save
+                              </button>
+                          </div>
+                          </div>
+
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -310,49 +322,67 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="card-title d-flex justify-content-between align-items-center">
-                        <h5>Lab results</h5>
-                        <div class="d-flex">
-                          <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1"
-                          href="lab-add.html">
-                            <i class="fa fa-plus me-2 fs-5"></i>Add diagnostic results
-                        </a>
-                        </div>
-
+                        <h5>Diagnostic results</h5>
                       </div>
-                      <div class="table-responsive care-manager-table">
-                        <table class="table table-bordered table-striped table-hover">
-                          <thead>
-                            <tr class="text-white">
-                              <th>Patient Name</th>
-                              <th>Document Name</th>
-                              <th>Upload Document</th>
-                              <th>Diagnostic Results</th>
-                              <th>Date</th>
-                              <th>Provider</th>
-                              <th>Comment</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>John</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Active</td>
-                              <td>Type1</td>
-                              <td>DD/MM/YYYY</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                            </tr>
-                            <tr>
-                              <td>John 1</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Active</td>
-                              <td>Type2</td>
-                              <td>DD/MM/YYYY</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="row  g-0">
+                        <div class="col-lg-6 col-sm-12 bg-light">
+                          <img src="./assets/images/doc-img.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 col-sm-12 bg-light p-3">
+                          <div class="row g-1">
+                            <div class="col-12">
+                              <label>Patient Name</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label>Document Name</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label>Diagnostic Results<span class="text-danger">
+                                  *</span></label>
+                              <select class="form-select form-select-sm">
+                                <option selected>Select </option>
+                                <option value="Option 1">Option 1</option>
+                                <option value="Option 2">Option 2</option>
+                                <option value="Option 3">Option 3</option>
+                                <option value="Option 4">Option 4</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <label>Date</label>
+                              <input type="date" class="form-control form-control-sm" />
+                            </div>
+                            <div class="col-12">
+                              <label>Provider</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Text" />
+                            </div>
+                            <div class="col-12">
+                              <label for="" class="form-label">Comment</label>
+                              <textarea class="form-control form-control-sm" rows="2" placeholder="Text"></textarea>
+                            </div>
+                            <div class="col-12">
+                              <label>Upload Document</label>
+                              <div class="file-upload bg-white rounded">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                  <span class="mdi mdi-cloud-upload-outline fs-1 text-primary"></span>
+                                  <a href="">Browse</a>
+                                  <span>Supported Formats: JPEG,PNG,PDF</span>
+                                </div>
+                                <input type="file" name="file" />
+                              </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end mt-3">
+                              <button class="btn text-danger btn-sm me-3">
+                                  Cancel
+                              </button>
+                              <button class="btn btn-primary btn-sm px-4">
+                                  Save
+                              </button>
+                          </div>
+                          </div>
+
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -372,7 +402,28 @@
 
       </div>
 
- 
+      <!-- Modal -->
+      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="addModalLabel">Add Member</h6>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              TBD
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary btn-sm ">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
