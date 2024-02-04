@@ -312,22 +312,65 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+      <div class="modal  fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h6 class="modal-title" id="addModalLabel">Add Member</h6>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h6 class="modal-title" id="exampleModalLabel">Add Member</h6>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              TBD
+              <form class="row g-3">
+                <div class="col-lg-4 col-sm-4">
+                  <label for="organization">Organization</label>
+                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="provider-name">Provider Name</label>
+                  <input type="password" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="provider-type">Provider Type</label>
+                  <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="contact-number">Phone Number</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="xxx-xxx-xxxx" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="contact-number">Fax</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="xxx-xxx-xxxx" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="contact-number">Email</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="status">Status</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Open this select menu</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="from-date">From Date</label>
+                  <input type="date" class="form-control form-control-sm" id="from-date" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="to-date">Last Seen Date</label>
+                  <input type="date" class="form-control form-control-sm" id="to-date" />
+                </div>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
                 Close
               </button>
-              <button type="button" class="btn btn-primary btn-sm " data-bs-dismiss="modal">
-                Save changes
+              <button type="button" class="btn btn-primary btn-sm px-5 ms-3">
+                Ok
               </button>
             </div>
           </div>
