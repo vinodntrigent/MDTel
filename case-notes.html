@@ -256,7 +256,46 @@
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">Case Note Details</div>
+                        <div class="accordion-body">
+                          <form class="row g-3">
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="status">Encounter Type</label>
+                              <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected class="text-muted">Open this select menu</option>
+                                <option value="Active">Active</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Delayed">Delayed</option>
+                                <option value="completed">completed</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="status">Note Type</label>
+                              <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected class="text-muted">Open this select menu</option>
+                                <option value="Active">Active</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Delayed">Delayed</option>
+                                <option value="completed">completed</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="from-date">Date</label>
+                              <input type="date" class="form-control form-control-sm" id="from-date" />
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="organization">Age at Encounter</label>
+                              <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="organization">Organization</label>
+                              <input type="text" class="form-control form-control-sm" id="organization" placeholder="Search" />
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="provider-type">Seen By</label>
+                              <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" />
+                            </div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -269,7 +308,9 @@
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">Chief Complaints</div>
+                        <div class="accordion-body">
+                          <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -282,7 +323,9 @@
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">Health Concerns</div>
+                        <div class="accordion-body">
+                          <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -295,7 +338,107 @@
                       </h2>
                       <div id="flush-collapseFour" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">Vitals</div>
+                        <div class="accordion-body">
+                          <div class=" d-flex justify-content-end  mb-2 ">
+                            <div class="col-lg-3 col-sm-4">
+                              <select class=" form-select form-select-sm" aria-label="Default select example">
+                                <option  class="text-muted">Last 5 encounter or labs</option>
+                                <option value="Active">Last encounter of lab</option>
+                                <option value="Pending">Last 5 encounter or labs</option>
+                                <option value="Delayed">Last 10 encounter or labs</option>
+                                <option value="completed">Custom range</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Vitals</th>
+                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Heights</td>
+                                  <td>67 in</td>
+                                  <td>67 in</td>
+                                  <td>67 in</td>
+                                  <td>67 in</td>
+                                  <td>67 in</td>
+                                </tr>
+                                <tr>
+                                  <td>Weights</td>
+                                  <td>172 lb</td>
+                                  <td>172 lb</td>
+                                  <td>172 lb</td>
+                                  <td>172 lb</td>
+                                  <td>172 lb</td>
+                                </tr>
+                                <tr>
+                                  <td>BMI</td>
+                                  <td>26.94</td>
+                                  <td>26.94</td>
+                                  <td>26.94</td>
+                                  <td>26.94</td>
+                                  <td>26.94</td>
+                                </tr>
+                                <tr>
+                                  <td>BP</td>
+                                  <td>137/80 mmHg</td>
+                                  <td>137/80 mmHg</td>
+                                  <td>137/80 mmHg</td>
+                                  <td>137/80 mmHg</td>
+                                  <td>137/80 mmHg</td>
+                                </tr>
+                                <tr>
+                                  <td>Pulse</td>
+                                  <td>80 bpm</td>
+                                  <td>80 bpm</td>
+                                  <td>80 bpm</td>
+                                  <td>80 bpm</td>
+                                  <td>80 bpm</td>
+                                </tr>
+                                <tr>
+                                  <td>Temperature</td>
+                                  <td>98.4^F</td>
+                                  <td>98.4^F</td>
+                                  <td>98.4^F</td>
+                                  <td>98.4^F</td>
+                                  <td>98.4^F</td>
+                                </tr>
+                                <tr>
+                                  <td>Respiratory Rate</td>
+                                  <td>17 bpm</td>
+                                  <td>17 bpm</td>
+                                  <td>17 bpm</td>
+                                  <td>17 bpm</td>
+                                  <td>17 bpm</td>
+                                </tr>
+                                <tr>
+                                  <td>OZ Saturation</td>
+                                  <td>98 %</td>
+                                  <td>98 %</td>
+                                  <td>98 %</td>
+                                  <td>98 %</td>
+                                  <td>98 %</td>
+                                </tr>
+                                <tr>
+                                  <td>Pain</td>
+                                  <td>0</td>
+                                  <td>0</td>
+                                  <td>0</td>
+                                  <td>0</td>
+                                  <td>0</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="accordion-item">
@@ -310,7 +453,7 @@
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
                           <div class="d-flex justify-content-end mb-2">
-                            <button class="btn btn-primary btn-sm " data-bs-toggle="modal" data-bs-target="#addModal">+
+                            <button class="btn btn-primary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#addModal">+
                               Add</button>
                           </div>
                           <div class="table-responsive care-manager-table">
@@ -564,7 +707,9 @@
                       </h2>
                       <div id="flush-collapseSeven" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">Plan</div>
+                        <div class="accordion-body">
+                          <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
+                        </div>
                       </div>
                     </div>
                   </div>
