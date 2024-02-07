@@ -284,15 +284,18 @@
                             </div>
                             <div class="col-lg-6 col-sm-6">
                               <label for="organization">Age at Encounter</label>
-                              <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                              <input type="text" class="form-control form-control-sm" id="organization"
+                                placeholder="Text" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
                               <label for="organization">Organization</label>
-                              <input type="text" class="form-control form-control-sm" id="organization" placeholder="Search" />
+                              <input type="text" class="form-control form-control-sm" id="organization"
+                                placeholder="Search" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
                               <label for="provider-type">Seen By</label>
-                              <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" />
+                              <input type="text" class="form-control form-control-sm" id="provider-type"
+                                placeholder="Text" />
                             </div>
                           </form>
                         </div>
@@ -342,7 +345,7 @@
                           <div class=" d-flex justify-content-end  mb-2 ">
                             <div class="col-lg-3 col-sm-4">
                               <select class=" form-select form-select-sm" aria-label="Default select example">
-                                <option  class="text-muted">Last 5 encounter or labs</option>
+                                <option class="text-muted">Last 5 encounter or labs</option>
                                 <option value="Active">Last encounter of lab</option>
                                 <option value="Pending">Last 5 encounter or labs</option>
                                 <option value="Delayed">Last 10 encounter or labs</option>
@@ -453,7 +456,8 @@
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
                           <div class="d-flex justify-content-end mb-2">
-                            <button class="btn btn-primary btn-sm px-4" data-bs-toggle="modal" data-bs-target="#addModal">+
+                            <button class="btn btn-primary btn-sm px-4" data-bs-toggle="modal"
+                              data-bs-target="#addModal">+
                               Add</button>
                           </div>
                           <div class="table-responsive care-manager-table">
@@ -559,7 +563,20 @@
                               </h2>
                               <div id="child-2" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
-                                <div class="accordion-body"> Member Details</div>
+                                <div class="accordion-body">
+                                  <form class="row g-3">
+                                    <div class="col-lg-6 col-sm-6">
+                                      <label for="organization">First Name</label>
+                                      <input type="text" class="form-control form-control-sm" id="organization"
+                                        placeholder="first name" />
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                      <label for="organization">Last Name</label>
+                                      <input type="text" class="form-control form-control-sm" id="organization"
+                                        placeholder="last name" />
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -573,7 +590,24 @@
                               <div id="child-3" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
                                 <div class="accordion-body">
-                                  Contact</div>
+                                  <form class="row g-3">
+                                    <div class="col-lg-4 col-sm-4">
+                                      <label for="organization">Phone Number</label>
+                                      <input type="text" class="form-control form-control-sm" id="organization"
+                                        placeholder="Enter Phone number" />
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                      <label for="organization">Email</label>
+                                      <input type="text" class="form-control form-control-sm" id="organization"
+                                        placeholder="last name" />
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                      <label for="organization">Best Time to reach out</label>
+                                      <input type="text" class="form-control form-control-sm" id="organization"
+                                        placeholder="last name" />
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -586,7 +620,211 @@
                               </h2>
                               <div id="child-4" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
-                                <div class="accordion-body">Initial Risk Assessment</div>
+                                <div class="accordion-body">
+                                  <ol>
+                                    <li class="mb-2">
+                                      <p>Do you have an Advanced Directive AOR and/or living well?<span
+                                          class="text-danger">*</span></p>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">NA</label>
+                                      </div>
+                                    </li>
+                                    <li class="mb-2">
+                                      <p>Do you have any religious or cultural beliefs that would impact your health
+                                        care delivery ?</p>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">NA</label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <p class="col-lg-8 col-sm-8">Do you have difficulty remembering<span
+                                          class="text-danger">*</span></p>
+                                      <div class="form-check form-check-inline me-1">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio1" value="irayes">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                      </div>
+                                      <div class="form-check form-check-inline me-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio2" value="irano">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                      </div>
+                                      <div class="form-check form-check-inline me-2">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio3" value="irana">
+                                        <label class="form-check-label" for="inlineRadio3">NA</label>
+                                      </div>
+                                      <div class="form-group irayes " style="display: none;">
+                                        <ol type="a" class="bg-white">
+                                          <li class="mb-2">
+                                            <p>I was convicted of a crime and served time in jail or prison less than 12
+                                              months ago</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          <li class="mb-2">
+                                            <p>I was convicted of a crime and served time in jail or prison more than 12
+                                              months ago</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>I was convicted of a crime but did not serve time in jail or prison</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>I am in a custody battle, litigation or contesting an arrest or other
+                                              legal trouble</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>If you have served time in jail or prison, have you had trouble adjusting
+                                              to your life after getting out</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                        </ol>
+                                      </div>
+                                      <div class="form-group irano " style="display: none;">
+                                        <ol type="A" class="bg-white">
+                                          <li class="mb-2">
+                                            <p>Have you been in the hospital in the last 3 months?</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>Have you had to stay in the hospital 3 or more times in the last year?
+                                            </p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>Are you currently or have you been in a skilled nursing facility or
+                                              intermediate care home in the last year?</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p> Have you been seen in the emergency room 3 or more times in the last
+                                              year?</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                          <li class="mb-2">
+                                            <p>Do you need any help getting follow up care with any provider?</p>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                              <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                              <label class="form-check-label" for="inlineRadio2">No</label>
+                                            </div>
+                                          </li>
+                                        </ol>
+                                      </div>
+                                    </li>
+                                  </ol>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -599,7 +837,376 @@
                               </h2>
                               <div id="child-5" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
-                                <div class="accordion-body">About Your Conditions</div>
+                                <div class="accordion-body">
+                                  <p>
+                                    Do you have any of the following conditions?
+                                  </p>
+                                  <ol>
+                                    <li>
+                                      <p>Cancer-currently being treated?</p>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio1" value="aycyes">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                          id="inlineRadio2" value="aycno">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                      </div>
+                                      <div class="form-group aycno " style="display: none;">
+                                        <label for="">Please specify<span
+                                          class="text-danger">*</span></label>
+                                        <textarea class="form-control form-control-sm " placeholder="text"
+                                          rows="3"></textarea>
+                                      </div>
+                                      <div class="form-group aycyes " style="display: none;">
+                                        <ol class="bg-white pt-2">
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Difficulty walking safely?</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Kidney disease (on dialysis)</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">HIV/AIDS</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Drug, Medicine or alcohol abuse?</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Memory loss?</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Difficulty Concentrating</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Diabetes</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Heart Condition</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">COPD</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Organ Transplant</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Dizziness</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Are you currently pregnant</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Intellectual or developmental disabilities?</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Behavioral health diagnosis</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Chronic pain</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Disabilities</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Asthma</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Smoke Cigarette</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">Other serious illness</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                          <li>
+                                            <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                              <p class="col-lg-9 col-sm-9">No conditions reported</p>
+                                              <div class="col-lg-3 col-sm-3">
+                                                <div class="form-check form-check-inline me-1">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline me-2">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </li>
+                                        </ol>
+                                      </div>
+                                    </li>
+                                  </ol>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -625,7 +1232,220 @@
                               </h2>
                               <div id="child-7" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
-                                <div class="accordion-body">About Your Medical Needs</div>
+                                <div class="accordion-body">
+                                  <div>
+                                    <p>
+                                      Do you use any medical equipment or Suppliers?
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="aymnyes">
+                                      <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="aymnno">
+                                      <label class="form-check-label" for="inlineRadio2">No</label>
+                                    </div>
+                                      <div class="form-group aymnyes " style="display: none;">
+                                          <ol class="bg-white pt-2">
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Oxygen</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Wheelchair</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Ostomy supplies</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Walker</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Hospital bed</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Lift</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Hearing aid</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Portable Commode</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Feeding suppliers</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Visual Aids</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="col-lg-8 col-sm-12  d-flex justify-content-between ">
+                                                <p class="col-lg-9 col-sm-9">Others</p>
+                                                <div class="col-lg-3 col-sm-3">
+                                                  <div class="form-check form-check-inline me-1">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio1" value="aymn11">
+                                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline me-2">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                      id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="form-group aymn11 " style="display: none;">
+                                                <label for="">Please specify<span
+                                                  class="text-danger">*</span></label>
+                                                <textarea class="form-control form-control-sm " placeholder="text"
+                                                  rows="3"></textarea>
+                                              </div>
+                                            </li>
+                                          </ol>
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -677,7 +1497,1228 @@
                               </h2>
                               <div id="child-11" class="accordion-collapse collapse bg-light"
                                 data-bs-parent="#accordionFlushExample-child">
-                                <div class="accordion-body">Social Determinants of Health(SDOH)</div>
+                                <div class="accordion-body">
+                                  <ol>
+                                    <li class="mb-2">
+                                      <p class="mb-2">What is your highest level of education?</p>
+                                      <label for="status">Does the place where you live have?</label>
+                                      <div class="col-lg-4 col-sm-4">
+                                        <select class="form-select form-select-sm" aria-label="Default select example">
+                                          <option selected class="text-muted">Open this select menu</option>
+                                          <option value="Active">Active</option>
+                                          <option value="Pending">Pending</option>
+                                          <option value="Delayed">Delayed</option>
+                                          <option value="completed">completed</option>
+                                        </select>
+                                      </div>
+                                    </li>
+                                    <li class="mb-2">
+                                      <p>If you did not finish school, do any of the statements below relate to you not
+                                        finishing?</p>
+                                      <ol class="bg-white">
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I had a hard time finishing classes</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I had a hard time getting used to school or
+                                              getting along with teachers</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I had other problems related to school and
+                                              learning</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8"> Do you need help filing out forms or is
+                                              someone helping you fill out this form?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Do you need help looking for or more training
+                                              to keep a job?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+
+                                      </ol>
+                                    </li>
+                                    <li class="mb-2">
+                                      <p>What is your housing situation today?</p>
+                                      <ol class="bg-white">
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have housing</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I do not have housing (I am staying with
+                                              others, in a hotel, in a shelter, living outside on the street, on a
+                                              bench, in a car abandoned building, bus or train station or in a park)</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have housing today, but I am worried about
+                                              losing housing in the future</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                    <li class="mb-2">
+                                      <p>In the past three months, did you ever worried?</p>
+                                      <ol class="bg-white">
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">That your electric, gas and water company would
+                                              shut off service</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">That you would not have access to food or water
+                                            </p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">About home safety such as Bug infestation,
+                                              Mold, Lead Paint or pipes, Oven or stove not working, No or not working
+                                              smoke detectors, Water leaks</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Do you live alone?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Were you born in the United states?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                      </ol>
+                                    </li>
+                                    <li class="mb-2">
+                                      <p>Has it been hard for you getting used to life in the US?</p>
+                                      <ol class="bg-white">
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have had a hard time learning English</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have had a hard time finding jobs</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have had a hard time making friends</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">I have had a hard time getting used to the
+                                              culture</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Did a parent or other adult in the household
+                                              ever swear at you, insult you, put you down or make fun of you</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">During your childhood, did a parent or other
+                                              adult in the household ever act in a way that made you afraid that you
+                                              might be hurt</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Did you ever feel that… you didn’t have enough
+                                              to eat, had to wear dirty clothes or had no one to protest you?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Were any of your parents: Ever pushed, grabbed,
+                                              slapped, or had something thrown at them?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Were any of your other adult caregiver: Ever
+                                              pushed, grabbed, slapped, or had something thrown at them?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Were your parents ever separated or divorced?
+                                            </p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Currently are any stressful events affecting
+                                              your family or household?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="sdoh11yes">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="sdoh11no">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh11dec">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh11na">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-group sdoh11yesx " style="display: none;">
+                                            <ol type="a">
+                                              <li class="mb-2">
+                                                <p>I have a problem in relationship with my spouse or partner</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I have a family member gone due to military deployment</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I had a family member go missing or die</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I have family issues because of separate on or divorce</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I have someone in the family struggling with alcoholism and/or drug
+                                                  addition</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I have other issues in my family</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                            </ol>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Currently are any stressful events affecting
+                                              your family or household?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="sdoh12yes">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="sdoh12no">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh12dec">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh12na">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-group sdoh12yesx " style="display: none;">
+                                            <ol type="a">
+                                              <li class="mb-2">
+                                                <p>I am planning to keep</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I would like more information on my options</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                            </ol>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Have you felt left out by others, and/or
+                                              rejected due to your physical appearance , illness or behavior?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Hope you've ever been discriminated against due
+                                              to your race, political, religious belief?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Have you ever spent time in a jail, prison or
+                                              juvenile detention facility or are you involved in any legal problems?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="sdoh15yes">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="sdoh15no">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh15dec">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="sdoh15na">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="form-group sdoh15yesx " style="display: none;">
+                                            <ol type="a">
+                                              <li class="mb-2">
+                                                <p>I was convicted of a crime and served time in jail or prison less
+                                                  than 12 months ago</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I was convicted of a crime and served time in jail or prison more
+                                                  than 12 months ago</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I was convicted of a crime but did not serve time in jail or prison
+                                                </p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>I am in a custody battle, litigation or contesting an arrest or other
+                                                  legal trouble</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                              <li class="mb-2">
+                                                <p>If you have served time in jail or prison, have you had trouble
+                                                  adjusting to your life after getting out</p>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio1" value="option1">
+                                                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio2" value="option2">
+                                                  <label class="form-check-label" for="inlineRadio2">No</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio3" value="option3">
+                                                  <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio4" value="option4">
+                                                  <label class="form-check-label" for="inlineRadio4">NA</label>
+                                                </div>
+                                              </li>
+                                            </ol>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Have you personally witnessed a violent crime
+                                              or act as a terrorism?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Have you ever been affected by a natural
+                                              disaster or any other violent events?</p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="col-lg-12 col-sm-12  d-flex justify-content-between ">
+                                            <p class="col-lg-8 col-sm-8">Has a member declined to answer SDOH questions?
+                                            </p>
+                                            <div class="col-lg-4 col-sm-4">
+                                              <div class="form-check form-check-inline me-1">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Decline</label>
+                                              </div>
+                                              <div class="form-check form-check-inline me-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                  id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">NA</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </li>
+
+
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </div>
                               </div>
                             </div>
                             <div class="accordion-item">
@@ -784,6 +2825,48 @@
   <script src="assets/js/off-canvas.js"></script>
   <script src="assets/js/hoverable-collapse.js"></script>
   <script src="assets/js/misc.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('input[type=radio][name=inlineRadioOptions]').change(function () {
+        var selectedValue = $(this).val();
+        $('.sdoh11yesx, .sdoh12yesx, .sdoh15yesx, .irayes, .irano, .aycno, .aycyes, .aymnyes').hide();
+
+        switch (selectedValue) {
+          case 'sdoh11yes':
+            $('.sdoh11yesx').show();
+            break;
+          case 'sdoh12yes':
+            $('.sdoh12yesx').show();
+            break;
+          case 'sdoh15yes':
+            $('.sdoh15yesx').show();
+            break;
+          case 'irayes':
+            $('.irayes').show();
+            break;
+          case 'irano':
+            $('.irano').show();
+            break;
+          case 'aycno':
+            $('.aycno').show();
+            break;
+          case 'aycyes':
+            $('.aycyes').show();
+            break;
+            case 'aymnyes':
+            $('.aymnyes').show();
+            break;
+
+
+          default:
+            break;
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
