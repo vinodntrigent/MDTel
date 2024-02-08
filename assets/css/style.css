@@ -1006,6 +1006,11 @@ html {
   .offcanvas{
     width: 80% !important;
 }
+
+.card-body,.accordion-body, .content-wrapper{
+    padding-left: 8px;
+    padding-right: 8px;
+}
 }
 .time-selection .form-select{
   --bs-form-select-bg-img:none !important
