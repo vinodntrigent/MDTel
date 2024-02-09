@@ -1,17 +1,66 @@
 $(document).ready(function () {
 
+
     $(".check-rd").on("click", function () {
         $(".irayes").show();
         $('.irano').hide();
     });
-
+    
     $(".check-rd2").on("click", function () {
         $(".irayes").hide();
         $('.irano').show();
     });
+
+    $(".check-rdna").on("click", function () {
+        $('.irano').hide();
+        $(".irayes").hide();
+    });
+
+    $(".check-rdayc").on("click", function () {
+        $(".aycyes").show();
+        $('.aycno').hide();
+    });
+    
+    $(".check-rdayc2").on("click", function () {
+        $(".aycyes").hide();
+        $('.aycno').show();
+    });
+
+
+    $(".check-ayd").on("click", function () {
+        $(".aydyes").show();
+    });
+    
+    $(".check-aydn").on("click", function () {
+        $(".aydyes").hide();
+    });
+
+    $(".check-ayd3").on("click", function (){
+        if ($(this).is(":checked")) {
+            $(".ayd3").show();
+        } else {
+            $(".ayd3").hide();
+        }
+    });
+
+    
+    // $("input[name='toggle']").on("click", function () {
+    //     var checkedRadioId = $("input[name='toggle']:checked").attr("id");
+    
+    //     if (checkedRadioId === "radioNA") {
+    //         $(".irayes").hide();
+    //         $('.irano').hide();
+    //     } else if (checkedRadioId === "radio1") {
+    //         $(".irayes").show();
+    //         $('.irano').hide();
+    //     } else if (checkedRadioId === "radio2") {
+    //         $(".irayes").hide();
+    //         $('.irano').show();
+    //     }
+    // });
     
 
-//     $(document).ready(function () {
+ //     $(document).ready(function () {
 //     $(".check-rd, .check-rd2").on("click", function () {
 //         var id = $(this).attr("data-id");
 //         if ($(this).is(":checked")) {
