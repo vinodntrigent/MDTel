@@ -36,12 +36,11 @@ $(document).ready(function () {
     });
 
     $(".check-ayd3").on("click", function (){
-        if ($(this).is(":checked")) {
             $(".ayd3").show();
-        } else {
-            $(".ayd3").hide();
-        }
     });
+    $(".check-ayd3no, .check-ayd3na ").on("click", function (){
+            $(".ayd3").hide();
+           });
 
     
     // $("input[name='toggle']").on("click", function () {

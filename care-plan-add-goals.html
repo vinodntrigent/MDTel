@@ -239,8 +239,11 @@
           <nav aria-label="breadcrumb m-0 p-0">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li class="breadcrumb-item " aria-current="page">
                 Care Plan
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Add Goal
               </li>
             </ol>
           </nav>
@@ -248,50 +251,72 @@
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <div class="card-title d-flex justify-content-between align-items-center">
-                    <h5>Care Plan</h5>
-                    <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" href="care-plan-add.html">
-                      <i class="fa fa-plus me-2 fs-5"></i>Add Care Plan
-                  </a>
+                  <div class="card-title">
+                    <h5>Add Goal</h5>
                   </div>
-                  <div class="table-responsive care-manager-table">
-                    <table class="table table-bordered table-striped table-hover">
-                      <thead>
-                        <tr class="text-white">
-                          <th>Member CIN</th>
-                          <th>Member Name</th>
-                          <th>Member DOB</th>
-                          <th>Risk level</th>
-                          <th>Enrollment status</th>
-                          <th>Status date</th>
-                          <th>Upcoming activity</th>
-                          <th>Due date</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1212387</td>
-                          <td>Richard Sam</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>High</td>
-                          <td>Pending</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>lorem ipsum dolor cando ispum alinga </td> 
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                        <tr>
-                          <td>1219387</td>
-                          <td>Robert Sandler</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>Low</td>
-                          <td>Pending</td>
-                          <td>DD/MM/YYYY</td>
-                          <td>lorem ipsum dolor cando ispum alinga </td> 
-                          <td>DD/MM/YYYY</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <p>Use SMART goals. SMART goals are Specific, Measurable, Achievable, Realistic and
+                    Timely. Specific, Clear and specific in defining what exactly needs to be accomplished.</p>
+                    <a href="" class="text-decoration-none text-primary" data-bs-toggle="modal"
+                    data-bs-target="#addModal">See Example</a>
+                    <form class="row g-3 bg-info p-1 mt-3 pb-3">
+                      <div class="col-12">
+                        <label for="provider-name">Problems<span
+                          class="text-danger">*</span></label>
+                        <textarea class="form-control form-control-sm "placeholder="Text" rows="4"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <label for="provider-name">Goal<span
+                          class="text-danger">*</span></label>
+                        <textarea class="form-control form-control-sm "placeholder="Text" rows="4"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <label for="provider-name">Barrier<span
+                          class="text-danger">*</span></label>
+                        <textarea class="form-control form-control-sm "placeholder="Text" rows="4"></textarea>
+                      </div>
+                      <div class="col-lg-6 col-sm-6">
+                        <label for="from-date">Goal due date</label>
+                        <input type="date" class="form-control form-control-sm" />
+                      </div>
+                      <div class="col-lg-6 col-sm-6">
+                        <label for="status">Priority<span class="text-danger">*</span></label>
+                        <select class="form-select form-select-sm" aria-label="Default select example">
+                          <option selected class="text-muted">Select</option>
+                          <option value="Option 1">High</option>
+                          <option value="Option 2">Moderate</option>
+                          <option value="Option 3">Low</option>
+                        </select>
+                      </div>
+                    </form>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Add Interventions</h5>
                   </div>
+                  <p>Interventions are intentional action steps taken to help reach the specific goal in question. They, too, have a timeline of their own to help monitor progress toward their goal</p>
+                  
+                    <form class="row g-3 bg-info p-1 mt-3 pb-3">
+                      <div class="col-12">
+                        <label for="provider-name">Interventions<span
+                          class="text-danger">*</span></label>
+                        <textarea class="form-control form-control-sm "placeholder="Text" rows="4"></textarea>
+                      </div>
+                      <div class="col-lg-6 col-sm-6">
+                        <label for="from-date">Goal due date</label>
+                        <input type="date" class="form-control form-control-sm" />
+                      </div>
+                    </form>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                  <button type="button" class="btn text-danger btn-sm " >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary btn-sm px-3 ms-3">
+                    Save
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm px-3 ms-3">
+                    Delete
+                  </button>
                 </div>
               </div>
             </div>
@@ -310,7 +335,48 @@
       <!-- main-panel ends -->
     </div>
     <!-- Modal -->
-
+    <div class="modal modal-lg  fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Example of Smart Goals</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 bg-info p-1 mt-3 pb-3">
+              <div class="col-12">
+                <label for="provider-name">Problems<span
+                  class="text-danger">*</span></label>
+                <textarea class="form-control form-control-sm "placeholder="" rows="4" disabled>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam odio nisi, lobortis a nisi consequat, iaculis sodales quam. Donec sit amet sapien mollis, lacinia leo in, mollis nisl. Sed in orci vulputate, ultrices ex ut, blandit purus. Praesent id odio arcu. Aenean condimentum diam et tristique iaculis. Sed nec pulvinar ligula. Cras eget augue lorem. Ut vestibulum tristique erat ut ultricies. Nam id finibus ipsum. Vivamus lectus arcu, interdum non nisi eget, maximus tristique augue. Integer dapibus pharetra arcu, sed finibus neque mattis gravida. Pellentesque vel nunc ut elit malesuada efficitur</textarea>
+              </div>
+              <div class="col-12">
+                <label for="provider-name">Goal<span
+                  class="text-danger">*</span></label>
+                <textarea class="form-control form-control-sm "placeholder="Text" rows="4" disabled>Morbi pharetra tellus nisl, vel egestas magna dignissim eu. Duis accumsan id lacus id efficitur. Sed hendrerit gravida est, sed rutrum tellus egestas sed. Nunc nec mi vestibulum, gravida massa rutrum, malesuada mi. Nam sit amet nunc sapien. Nulla hendrerit enim sit amet lorem dapibus, sed facilisis risus faucibus. Aliquam sit amet justo tristique, varius ante a, scelerisque leo. </textarea>
+              </div>
+              <div class="col-12">
+                <label for="provider-name">Barrier<span
+                  class="text-danger">*</span></label>
+                <textarea class="form-control form-control-sm "placeholder="Text" rows="4" disabled>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla quis rutrum lectus. Morbi ac enim dignissim, ultrices nisi ut, interdum lorem. Pellentesque quam lorem, dapibus non mauris sit amet, consequat laoreet metus. Maecenas aliquet, nibh hendrerit luctus pretium, elit tellus viverra leo, ut euismod velit ex eget ex.</textarea>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label for="from-date">Goal due date</label>
+                <input class="form-control form-control-sm "placeholder="23/01/2024" rows="1" disabled></input>
+              </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary btn-sm px-5">
+              Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
@@ -322,6 +388,7 @@
   <script src="assets/js/misc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/case-notes-add.js"></script>
 
 </body>
 

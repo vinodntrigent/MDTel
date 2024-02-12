@@ -240,7 +240,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Case Notes
+                Care Plan
               </li>
             </ol>
           </nav>
@@ -249,7 +249,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
-                    <h5>Case Notes</h5>
+                    <h5>Care Plan</h5>
                   </div>
                   <div class="accordion accordion-flush " id="accordionFlushExample-parent">
                     <div class="accordion-item">
@@ -257,7 +257,7 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                           aria-expanded="false" aria-controls="flush-collapseOne">
-                          Case Note Details
+                          Member detail
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse bg-info"
@@ -265,13 +265,17 @@
                         <div class="accordion-body">
                           <form class="row g-3">
                             <div class="col-lg-6 col-sm-6">
-                              <label for="status">Encounter Type</label>
+                              <label for="organization">Member ID</label>
+                              <input type="text" class="form-control form-control-sm " id="organization"
+                                placeholder="xxxxxxxx" disabled/>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                              <label for="status">Current Risk level</label>
                               <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Open this select menu</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
+                                <option selected class="text-muted">select</option>
+                                <option value="Active">High</option>
+                                <option value="Pending">Moderate</option>
+                                <option value="Delayed">Low</option>
                               </select>
                             </div>
                             <div class="col-lg-6 col-sm-6">
@@ -312,7 +316,7 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                           aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Chief Complaints
+                          Allergies
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info"
@@ -327,10 +331,50 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                           aria-expanded="false" aria-controls="flush-collapseThree">
-                          Health Concerns
+                          Medication
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse bg-info"
+                        data-bs-parent="#accordionFlushExample-parent">
+                        <div class="accordion-body">
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Date of Service</th>
+                                  <th>Drug Category</th>
+                                  <th>Medication Label</th>
+                                  <th>Member Reported</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>DD/MM/YYYY</td>
+                                  <td>lorem ipsum dolor cando ispum alinga </td>
+                                  <td>1219387</td>
+                                  <td>Richard Sam</td>
+                                </tr>
+                                <tr>
+                                  <td>DD/MM/YYYY</td>
+                                  <td>lorem ipsum dolor cando ispum alinga </td>
+                                  <td>4532312</td>
+                                  <td>Robert San</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethree"
+                          aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Diagnosis History
+                        </button>
+                      </h2>
+                      <div id="flush-collapsethree" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
                           <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
@@ -342,107 +386,40 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
                           aria-expanded="false" aria-controls="flush-collapseFour">
-                          Vitals
+                          Recent test
                         </button>
                       </h2>
                       <div id="flush-collapseFour" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
-                          <div class=" d-flex justify-content-end  mb-2 ">
-                            <div class="col-lg-3 col-sm-4">
-                              <select class=" form-select form-select-sm" aria-label="Default select example">
-                                <option class="text-muted">Last 5 encounter or labs</option>
-                                <option value="Active">Last encounter of lab</option>
-                                <option value="Pending">Last 5 encounter or labs</option>
-                                <option value="Delayed">Last 10 encounter or labs</option>
-                                <option value="completed">Custom range</option>
-                              </select>
-                            </div>
-                          </div>
                           <div class="table-responsive care-manager-table">
                             <table class="table table-bordered table-striped table-hover">
                               <thead>
                                 <tr class="text-white">
-                                  <th>Vitals</th>
-                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
-                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
-                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
-                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
-                                  <th class="text-center">04/25/23 <br> 12:30AM</th>
+                                  <th>Test</th>
+                                  <th>Components</th>
+                                  <th>Ionic</th>
+                                  <th>CPT</th>
+                                  <th>Date of Service</th>
+                                  <th>Result</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Heights</td>
-                                  <td>67 in</td>
-                                  <td>67 in</td>
-                                  <td>67 in</td>
-                                  <td>67 in</td>
-                                  <td>67 in</td>
+                                  <td>Name of test</td>
+                                  <td>lorem ipsum dolor cando ispum alinga </td>
+                                  <td>1234122</td>
+                                  <td>Richard</td>
+                                  <td>DD/MM/YYYY</td>
+                                  <td>Negative</td>
                                 </tr>
                                 <tr>
-                                  <td>Weights</td>
-                                  <td>172 lb</td>
-                                  <td>172 lb</td>
-                                  <td>172 lb</td>
-                                  <td>172 lb</td>
-                                  <td>172 lb</td>
-                                </tr>
-                                <tr>
-                                  <td>BMI</td>
-                                  <td>26.94</td>
-                                  <td>26.94</td>
-                                  <td>26.94</td>
-                                  <td>26.94</td>
-                                  <td>26.94</td>
-                                </tr>
-                                <tr>
-                                  <td>BP</td>
-                                  <td>137/80 mmHg</td>
-                                  <td>137/80 mmHg</td>
-                                  <td>137/80 mmHg</td>
-                                  <td>137/80 mmHg</td>
-                                  <td>137/80 mmHg</td>
-                                </tr>
-                                <tr>
-                                  <td>Pulse</td>
-                                  <td>80 bpm</td>
-                                  <td>80 bpm</td>
-                                  <td>80 bpm</td>
-                                  <td>80 bpm</td>
-                                  <td>80 bpm</td>
-                                </tr>
-                                <tr>
-                                  <td>Temperature</td>
-                                  <td>98.4^F</td>
-                                  <td>98.4^F</td>
-                                  <td>98.4^F</td>
-                                  <td>98.4^F</td>
-                                  <td>98.4^F</td>
-                                </tr>
-                                <tr>
-                                  <td>Respiratory Rate</td>
-                                  <td>17 bpm</td>
-                                  <td>17 bpm</td>
-                                  <td>17 bpm</td>
-                                  <td>17 bpm</td>
-                                  <td>17 bpm</td>
-                                </tr>
-                                <tr>
-                                  <td>OZ Saturation</td>
-                                  <td>98 %</td>
-                                  <td>98 %</td>
-                                  <td>98 %</td>
-                                  <td>98 %</td>
-                                  <td>98 %</td>
-                                </tr>
-                                <tr>
-                                  <td>Pain</td>
-                                  <td>0</td>
-                                  <td>0</td>
-                                  <td>0</td>
-                                  <td>0</td>
-                                  <td>0</td>
+                                  <td>Name of test</td>
+                                  <td>lorem ipsum dolor cando ispum alinga </td>
+                                  <td>4532312</td>
+                                  <td>Robert San</td>
+                                  <td>DD/MM/YYYY</td>
+                                  <td>Positive</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -455,91 +432,28 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
                           aria-expanded="false" aria-controls="flush-collapseFive">
-                          Medications
+                          Risk Assessment
                         </button>
                       </h2>
                       <div id="flush-collapseFive" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
-                          <div class="d-flex justify-content-end mb-2">
-                            <button class="btn btn-primary btn-sm px-4" data-bs-toggle="modal"
-                              data-bs-target="#addModal">+
-                              Add</button>
-                          </div>
                           <div class="table-responsive care-manager-table">
                             <table class="table table-bordered table-striped table-hover">
                               <thead>
                                 <tr class="text-white">
-                                  <th>Medication Name</th>
-                                  <th>SIG</th>
-                                  <th>Prescriber's Name</th>
-                                  <th>Start Date</th>
-                                  <th>Stop Date</th>
+                                  <th>Name of the assessment</th>
+                                  <th>Completion date</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Heights</td>
-                                  <td>67 in</td>
-                                  <td>PRE 1</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
+                                  <td>lorem ipsum dolor cando ispum alinga</td>
+                                  <td>DD/MM/YYYY</td>
                                 </tr>
                                 <tr>
-                                  <td>Weights</td>
-                                  <td>172 lb</td>
-                                  <td>PRE 2</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>BMI</td>
-                                  <td>26.94</td>
-                                  <td>PRE 3</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>BP</td>
-                                  <td>137/80 mmHg</td>
-                                  <td>PRE 4</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>Pulse</td>
-                                  <td>80 bpm</td>
-                                  <td>PRE 5</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>Temperature</td>
-                                  <td>98.4^F</td>
-                                  <td>PRE 6</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>Respiratory Rate</td>
-                                  <td>17 bpm</td>
-                                  <td>PRE 7</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>OZ Saturation</td>
-                                  <td>98 %</td>
-                                  <td>PRE 8</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
-                                </tr>
-                                <tr>
-                                  <td>Pain</td>
-                                  <td>0</td>
-                                  <td>PRE 9</td>
-                                  <td>MM/DD/YYYY</td>
-                                  <td>MM/DD/YYYY</td>
+                                  <td>lorem ipsum dolor cando ispum alinga</td>
+                                  <td>DD/MM/YYYY</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -550,9 +464,117 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                          aria-expanded="false" aria-controls="flush-collapseSeven">
+                          Problems, Goals, Barriers & Interventions
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse bg-info"
+                        data-bs-parent="#accordionFlushExample-parent">
+                        <div class="accordion-body">
+                          <div class="d-flex justify-content-between align-items-baseline py-2">
+                            <div class="d-flex align-items-center">
+                              <p class="fs-6">Number of active goals -</p> <p class="fs-5 fw-bold ms-2">2</p> 
+                            </div>
+                            <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-0" href="care-plan-add-goals.html">
+                              <i class="fa fa-plus me-2 fs-5 py-2"></i>Add Goals
+                          </a>
+                          </div>
+                          <div class="table-responsive care-manager-table mt-2">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Priority</th>
+                                  <th>Problem</th>
+                                  <th colspan="2">Goal</th>
+                                  <th colspan="1">Barrier</th>
+                                  <th colspan="1">Due Date</th>
+                                  <th colspan="1">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>High</td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                  <td colspan="2"><div class="table-responsive care-manager-table">
+                                    <table class="table table-bordered  table-hover">
+                                      <thead>
+                                        <tr class="text-white">
+                                          <th>Intervention</th>
+                                          <th>Due Date</th>
+                                          <th>Completed Date</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td> Nam odio nisi, lobortis a nisi consequat, iaculis sodales quam. Donec sit amet sapien mollis, lacinia leo in, mollis nisl. Sed in orci vulputate, ultrices ex ut, blandit purus. Praesent id odio arcu. </td>
+                                          <td>DD/MM/YYYY</td>
+                                          <td>DD/MM/YYYY</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>sit amet, consectetur adipiscing elit lobortis a nisi consequat, iaculis sodales quam</td>
+                                  <td colspan="1">Pellentesque habitant morbi tristique</td>
+                                  <td colspan="1">DD/MM/YYYY</td>
+                                  <td colspan="1"><div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Select
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">View</a></li>
+                                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    </ul>
+                                  </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>High</td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                  <td colspan="2"><div class="table-responsive care-manager-table">
+                                    <table class="table table-bordered  table-hover">
+                                      <thead>
+                                        <tr class="text-white">
+                                          <th>Intervention</th>
+                                          <th>Due Date</th>
+                                          <th>Completed Date</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td> Nam odio nisi, lobortis a nisi consequat, iaculis sodales quam. Donec sit amet sapien mollis, lacinia leo in, mollis nisl. Sed in orci vulputate, ultrices ex ut, blandit purus. Praesent id odio arcu. </td>
+                                          <td>DD/MM/YYYY</td>
+                                          <td>DD/MM/YYYY</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>sit amet, consectetur adipiscing elit lobortis a nisi consequat, iaculis sodales quam</td>
+                                  <td colspan="1">Pellentesque habitant morbi tristique</td>
+                                  <td colspan="1">DD/MM/YYYY</td>
+                                  <td colspan="1"><div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Select
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">View</a></li>
+                                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    </ul>
+                                  </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
                           aria-expanded="false" aria-controls="flush-collapseSix">
-                          Assessments
+                          Problems, Goals, Barriers & Interventions
                         </button>
                       </h2>
                       <div id="flush-collapseSix" class="accordion-collapse collapse bg-info"
@@ -4191,7 +4213,7 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
                           aria-expanded="false" aria-controls="flush-collapseSeven">
-                          Plan
+                          Add goal
                         </button>
                       </h2>
                       <div id="flush-collapseSeven" class="accordion-collapse collapse bg-info"
