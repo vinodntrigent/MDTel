@@ -359,7 +359,7 @@
                                 <option value="completed">Custom range</option>
                               </select>
                             </div>
-                            <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1 btn-vital ms-2">
+                            <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1 btn-vital ms-2" data-bs-toggle="modal" data-bs-target="#addModal">
                               <i class="fa fa-plus me-2 fs-5"></i>Add New 
                           </a>
                           </div>
@@ -373,11 +373,6 @@
                                   <th class="text-center">04/25/23 <br> 12:30AM</th>
                                   <th class="text-center">04/25/23 <br> 12:30AM</th>
                                   <th class="text-center">04/25/23 <br> 12:30AM</th>
-                                  <th class="text-center new-table" style="display: none;">
-                                    <div class="d-flex justify-content-around"><span>04/25/23 <br> 12:30AM</span>
-                                      <button type="button" class="btn btn-outline-primary btn-sm btn-sm px-4 ms-3 btn-vital-close">
-                                        Save
-                                      </button></div></th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -388,7 +383,6 @@
                                   <td>67 in</td>
                                   <td>67 in</td>
                                   <td>67 in</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm " ></td>
                                 </tr>
                                 <tr>
                                   <td>Weights</td>
@@ -397,7 +391,6 @@
                                   <td>172 lb</td>
                                   <td>172 lb</td>
                                   <td>172 lb</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm " ></td>
                                 </tr>
                                 <tr>
                                   <td>BMI</td>
@@ -406,7 +399,6 @@
                                   <td>26.94</td>
                                   <td>26.94</td>
                                   <td>26.94</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm" ></td>
                                 </tr>
                                 <tr>
                                   <td>BP</td>
@@ -415,7 +407,6 @@
                                   <td>137/80 mmHg</td>
                                   <td>137/80 mmHg</td>
                                   <td>137/80 mmHg</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm " ></td>
                                 </tr>
                                 <tr>
                                   <td>Pulse</td>
@@ -424,7 +415,6 @@
                                   <td>80 bpm</td>
                                   <td>80 bpm</td>
                                   <td>80 bpm</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm "></td>
                                 </tr>
                                 <tr>
                                   <td>Temperature</td>
@@ -433,7 +423,6 @@
                                   <td>98.4^F</td>
                                   <td>98.4^F</td>
                                   <td>98.4^F</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm"></td>
                                 </tr>
                                 <tr>
                                   <td>Respiratory Rate</td>
@@ -442,7 +431,6 @@
                                   <td>17 bpm</td>
                                   <td>17 bpm</td>
                                   <td>17 bpm</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm"></td>
                                 </tr>
                                 <tr>
                                   <td>OZ Saturation</td>
@@ -451,7 +439,6 @@
                                   <td>98 %</td>
                                   <td>98 %</td>
                                   <td>98 %</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm " ></td>
                                 </tr>
                                 <tr>
                                   <td>Pain</td>
@@ -460,7 +447,6 @@
                                   <td>0</td>
                                   <td>0</td>
                                   <td>0</td>
-                                  <td class="new-table" style="display: none;"><input type="text" class="form-control form-control-sm " ></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -4592,27 +4578,41 @@
           </div>
           <div class="modal-body">
             <form class="row g-3">
-              <div class="col-12">
-                <label for="status">Medication Name</label>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                  <option selected class="text-muted">Select</option>
-                  <option value="Option 1">Option 1</option>
-                  <option value="Option 2">Option 2</option>
-                  <option value="Option 3">Option 3</option>
-                  <option value="Option 4">Option 4</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <label for="provider-name">Prescriber's Name</label>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Heights</label>
                 <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
               </div>
-              <div class="col-12">
-                <label for="from-date">Start Date</label>
-                <input type="date" class="form-control form-control-sm" />
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Weights</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
               </div>
-              <div class="col-12">
-                <label for="to-date">Stop Date</label>
-                <input type="date" class="form-control form-control-sm" />
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">BMI</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">BP</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Pulse</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Temperature</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Respiratory Rate</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">OZ Saturation</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+              </div>
+              <div class="col-lg-4 col-sm-4">
+                <label for="provider-name">Pain</label>
+                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
               </div>
             </form>
           </div>
@@ -4621,7 +4621,7 @@
               Cancel
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Ok
+              Save
             </button>
           </div>
         </div>
