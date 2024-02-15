@@ -283,15 +283,21 @@
                                                 <h6 class="border-bottom border-top p-3">Patient Details</h6>
                                                 <div class="p-3">
                                                     <form class="row g-4">
-                                                        <div
-                                                            class="col-lg-1 col-sm-6 d-flex  align-items-center justify-content-center">
-                                                            <img src="./assets//images/profile-img.jpg" alt=""
-                                                                class="content-logo-img ms-4">
+                                                        <div class="col-lg-2 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+                                                            <img src="./assets//images/profile-img.jpg" alt="" class="content-logo-img ">
+                                                            <button class="btn btn-sm btn-outline-primary align-items-center d-flex px-1 mt-2"><i class="mdi mdi-camera me-1"></i>Upload</button>
                                                         </div>
-                                                        <div class="col-lg-2 col-sm-6 title-col ps-4 ">
+                                                        <div class="col-lg-1 col-sm-6 title-col  ">
                                                             <label>Title</label>
-                                                            <input type="text" class="form-control form-control-sm"
-                                                                placeholder="Title" />
+                                                            <select class="form-select form-select-sm ">
+                                                                <option selected class="text-muted">Select</option>
+                                                                <option value="Option 1">MR</option>
+                                                                <option value="Option 2">MRS</option>
+                                                                <option value="Option 3">Miss</option>
+                                                                <option value="Option 3">Ms</option>
+                                                                <option value="Option 3">Dr</option>
+                                                                <option value="Option 3">Jr</option>
+                                                            </select>
                                                         </div>
                                                         <div class="col-lg-3 col-sm-6">
                                                             <label>First Name<span class="text-danger"> *</span></label>
@@ -613,7 +619,7 @@
                                                                 <option value="Option 3">Option 3</option>
                                                             </select>
                                                             <div class="text-end">
-                                                                <a href="" class="text-decoration-none">+ Add New</a>
+                                                                <a href="" class="text-decoration-none" data-bs-toggle="collapse" data-bs-target="#pcpnew">+ Add New</a>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
@@ -621,7 +627,7 @@
                                                             <textarea class="form-control form-control-sm" rows="2"
                                                                 placeholder="Text"></textarea>
                                                         </div>
-                                                        <div class=" col-12 ">
+                                                        <div class=" col-12 collapse collapse-horizontal " id="pcpnew" >
                                                             <div class="card bg-info p-2">
                                                                 <div class="row g-3">
                                                                     <div class="col-lg-6 col-sm-6">
