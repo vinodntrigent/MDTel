@@ -686,24 +686,29 @@
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Referral Status</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
+                    <option selected class="text-muted">Select </option>
+                    <option value="Active">Appoint schedule</option>
+                    <option value="Pending">Appointment booked</option>
+                    <option value="Delayed">Declined</option>
+                    <option value="completed">Received</option>
+                    <option value="completed">Sent</option>
                   </select>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="provider-name">Referred To<span class="text-danger">*</span></label>
                   <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Search" />
-                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                  <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="provider-type">Referred By<span class="text-danger">*</span></label>
                   <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Search" />
-                  <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a>
+                  <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a> -->
                 </div>
-                <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-info" id="referredby">
+                <div class="col-lg-6 col-sm-6">
+                  <label for="from-date">Created Date</label>
+                  <input type="date" class="form-control form-control-sm" id="from-date" />
+                </div>
+                <!-- <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-info" id="referredby">
                   <div class="col-lg-2 col-sm-4">
                     <label for="organization">Title</label>
                     <input type="text" class="form-control form-control-sm" id="organization" placeholder="Title" />
@@ -806,14 +811,17 @@
                         </button>
                       </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="from-date">Effective Date</label>
-                  <input type="date" class="form-control form-control-sm" id="from-date" />
-                </div>
+                </div> -->
+                
                 <div class="col-lg-6 col-sm-6">
                   <label for="search">ICD 10</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Search" />
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">Select</option>
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="completed">completed</option>
+                  </select>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Procedure Codes</label>

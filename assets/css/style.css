@@ -846,6 +846,13 @@ html {
   top: 0;
   right: 0;
 }
+.form-signin1{
+  width: 400px;
+  margin: 75px 75px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 .btn-gradient-primary {
   background: -webkit-gradient(
