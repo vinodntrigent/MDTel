@@ -111,9 +111,7 @@
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle text-white" id="profileDropdown" href="#" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <div class="nav-profile-img">
-                <img src="assets/images/profile-img.jpg" alt="image" />
-              </div>
+              
               <div class="nav-profile-text ms-2 d-flex align-items-center">
                 <p class="mb-1">Admin</p>
                 <i class="fa-solid fa-caret-down mb-1 ms-2"></i>
@@ -181,7 +179,7 @@
           <li class="nav-item">
             <a class="nav-link" href="care-manager.html">
               <i class="fa-solid fa-hands-holding menu-icon"></i>
-              <span class="menu-title">Care Manager</span>
+              <span class="menu-title">Case Manager</span>
             </a>
           </li>
           <li class="nav-item">
@@ -243,13 +241,27 @@
       
       <div class="main-panel">
         <div class="content-wrapper">
-          <nav aria-label="breadcrumb m-0 p-0">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page">
-                <a href="#">Home</a>
-              </li>
-            </ol>
-          </nav>
+          <div class="d-flex justify-content-between">
+            <nav aria-label="breadcrumb m-0 p-0">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a href="#">Home</a>
+                </li>
+              </ol>
+            </nav>
+            <div class="card w-25  mb-3 p-0 ">
+              <div class="card-body d-flex justify-content-start p-2">
+                <div class="nav-profile-img1 d-flex flex-column align-items-center">
+                  <img src="assets/images/patient.png" alt="image" />
+                </div>
+                <div class="d-flex flex-column ps-4 ">
+                <h6 class="card-title fw-semibold mb-1">Robert Zelensky</h6>
+                <h5 class="card-title">xxx-xxx</h5>   
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-12 grid-margin">
 
@@ -285,25 +297,19 @@
             <form class="row g-3">
               <div class="col-lg-4 col-sm-6">
                 <label for="organization">First Name<span class="text-danger"> *</span></label>
-                <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                <input type="text" class="form-control form-control-sm" placeholder="Text" />
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="provider-name">Middle Name</label>
-                <input type="password" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
+                <input type="text" class="form-control form-control-sm"  placeholder="Text" />
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="provider-type">Last Name<span class="text-danger"> *</span></label>
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                  <option selected class="text-muted">Select</option>
-                  <option value="Provider Type1">Provider Type1</option>
-                  <option value="Provider Type2">Provider Type2</option>
-                  <option value="Provider Type3">Provider Type3</option>
-                  <option value="Provider Type4">Provider Type4</option>
-                </select>
+                <input type="text" class="form-control form-control-sm"  placeholder="Text" />
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="organization">Chart Number</label>
-                <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
+                <input type="text" class="form-control form-control-sm " id="organization" placeholder="Text" disabled/>
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="provider-name">Address 1<span class="text-danger"> *</span></label>
@@ -381,36 +387,54 @@
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="provider-type">Gender Identity</label>
-                <select class="form-select form-select-sm" aria-label="Default select example">
+                <select class="form-select form-select-sm">
                   <option selected class="text-muted">Select</option>
-                  <option value="Provider Type1">Provider Type1</option>
-                  <option value="Provider Type2">Provider Type2</option>
-                  <option value="Provider Type3">Provider Type3</option>
-                  <option value="Provider Type4">Provider Type4</option>
-                </select>
+                  <option value="Option 1">Male</option>
+                  <option value="Option 2">Female</option>
+                  <option value="Option 3">Transgender Male/ Trans Man/Female-to-Man</option>
+                  <option value="Option 4">Transgender Female/ Trans Female/ Man-to-Female</option>
+                  <option value="Option 5">GenderQueer neither exclusive Male nor female</option>
+                  <option value="Option 6">Additional gender category/ Other</option>
+                  <option value="Option 7">Decline to answer</option>
+              </select>
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="provider-type">Sexual Orientation</label>
-                <select class="form-select form-select-sm" aria-label="Default select example">
+                <select class="form-select form-select-sm">
                   <option selected class="text-muted">Select</option>
-                  <option value="Provider Type1">Provider Type1</option>
-                  <option value="Provider Type2">Provider Type2</option>
-                  <option value="Provider Type3">Provider Type3</option>
-                  <option value="Provider Type4">Provider Type4</option>
-                </select>
+                  <option value="Option 1">Straight/Heterosexual</option>
+                  <option value="Option 2">Lesbian/Gay/ Homosexual</option>
+                  <option value="Option 3">Bisexual</option>
+                  <option value="Option 4">Something else</option>
+                  <option value="Option 5">Don't Know</option>
+                  <option value="Option 6">Decline to answer</option>
+              </select>
               </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="from-date">Date of Birth</label>
                 <input type="date" class="form-control form-control-sm" id="from-date" />
               </div>
               <div class="col-lg-4 col-sm-6">
+                <label for="provider-type">Marital Status</label>
+                <select class="form-select form-select-sm">
+                  <option selected class="text-muted">Select</option>
+                  <option value="Option 1">Single</option>
+                  <option value="Option 2">Married</option>
+                  <option value="Option 3">Legally Separated</option>
+                  <option value="Option 4">Widowed</option>
+                  <option value="Option 5">Unknown</option>
+              </select>
+              </div>
+              <div class="col-lg-4 col-sm-6">
                 <label for="provider-type">Financial Class</label>
                 <select class="form-select form-select-sm" aria-label="Default select example">
                   <option selected class="text-muted">Select</option>
-                  <option value="Provider Type1">Provider Type1</option>
-                  <option value="Provider Type2">Provider Type2</option>
-                  <option value="Provider Type3">Provider Type3</option>
-                  <option value="Provider Type4">Provider Type4</option>
+                  <option value="Provider Type1">Co -Commercial</option>
+                  <option value="Provider Type2">IN-Invoiving 3rd Party</option>
+                  <option value="Provider Type3">MD - MEDICAID</option>
+                  <option value="Provider Type4">MC- MEDICARE</option>
+                  <option value="Provider Type4">SP-Self pay</option>
+                  <option value="Provider Type4">WC - Workers Comp</option>
                 </select>
               </div>
               <div class="col-lg-4 col-sm-6">

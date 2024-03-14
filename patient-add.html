@@ -113,9 +113,7 @@
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle text-white" id="profileDropdown" href="#"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="nav-profile-img">
-                                <img src="assets/images/profile-img.jpg" alt="image" />
-                            </div>
+                            
                             <div class="nav-profile-text ms-2 d-flex align-items-center">
                                 <p class="mb-1">Admin</p>
                                 <i class="fa-solid fa-caret-down mb-1 ms-2"></i>
@@ -183,7 +181,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="care-manager.html">
                       <i class="fa-solid fa-hands-holding menu-icon"></i>
-                      <span class="menu-title">Care Manager</span>
+                      <span class="menu-title">Case Manager</span>
                     </a>
                   </li>
                   <li class="nav-item">
@@ -245,14 +243,28 @@
             
             <div class="main-panel">
                 <div class="content-wrapper">
-                    <nav aria-label="breadcrumb m-0 p-0">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                <a href="#">Patient</a>
-                            </li>
-                        </ol>
-                    </nav>
+                    <div class="d-flex justify-content-between">
+                        <nav aria-label="breadcrumb m-0 p-0">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    <a href="#">Patient</a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <div class="card w-25  mb-3 p-0 ">
+                            <div class="card-body d-flex justify-content-start p-2">
+                              <div class="nav-profile-img1 d-flex flex-column align-items-center">
+                                <img src="assets/images/patient.png" alt="image" />
+                              </div>
+                              <div class="d-flex flex-column ps-4 ">
+                              <h6 class="card-title fw-semibold mb-1">Robert Zelensky</h6>
+                              <h5 class="card-title">xxx-xxx</h5>   
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-12 grid-margin">
                             <div class="card">
@@ -303,6 +315,9 @@
                                                                 <option value="Option 3">Ms</option>
                                                                 <option value="Option 3">Dr</option>
                                                                 <option value="Option 3">Jr</option>
+                                                                <option value="Option 3">Sr</option>
+                                                                <option value="Option 3">II</option>
+                                                                <option value="Option 3">I</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-3 col-sm-6">
@@ -330,37 +345,43 @@
                                                                 <option selected class="text-muted">Select</option>
                                                                 <option value="Option 1">Male</option>
                                                                 <option value="Option 2">Female</option>
-                                                                <option value="Option 3">Other</option>
+                                                                <option value="Option 3">Unknown</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
                                                             <label>Gender Identity</label>
                                                             <select class="form-select form-select-sm">
                                                                 <option selected class="text-muted">Select</option>
-                                                                <option value="Option 1">Option 1</option>
-                                                                <option value="Option 2">Option 2</option>
-                                                                <option value="Option 3">Option 3</option>
-                                                                <option value="Option 4">Option 4</option>
+                                                                <option value="Option 1">Male</option>
+                                                                <option value="Option 2">Female</option>
+                                                                <option value="Option 3">Transgender Male/ Trans Man/Female-to-Man</option>
+                                                                <option value="Option 4">Transgender Female/ Trans Female/ Man-to-Female</option>
+                                                                <option value="Option 5">GenderQueer neither exclusive Male nor female</option>
+                                                                <option value="Option 6">Additional gender category/ Other</option>
+                                                                <option value="Option 7">Decline to answer</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
                                                             <label>Sexual Orientation</label>
                                                             <select class="form-select form-select-sm">
                                                                 <option selected class="text-muted">Select</option>
-                                                                <option value="Option 1">Option 1</option>
-                                                                <option value="Option 2">Option 2</option>
-                                                                <option value="Option 3">Option 3</option>
-                                                                <option value="Option 4">Option 4</option>
+                                                                <option value="Option 1">Straight/Heterosexual</option>
+                                                                <option value="Option 2">Lesbian/Gay/ Homosexual</option>
+                                                                <option value="Option 3">Bisexual</option>
+                                                                <option value="Option 4">Something else</option>
+                                                                <option value="Option 5">Don't Know</option>
+                                                                <option value="Option 6">Decline to answer</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
                                                             <label>Marital Status</label>
                                                             <select class="form-select form-select-sm">
                                                                 <option selected class="text-muted">Select</option>
-                                                                <option value="Option 1">Option 1</option>
-                                                                <option value="Option 2">Option 2</option>
-                                                                <option value="Option 3">Option 3</option>
-                                                                <option value="Option 4">Option 4</option>
+                                                                <option value="Option 1">Single</option>
+                                                                <option value="Option 2">Married</option>
+                                                                <option value="Option 3">Legally Separated</option>
+                                                                <option value="Option 4">Widowed</option>
+                                                                <option value="Option 5">Unknown</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
@@ -378,16 +399,32 @@
                                                                     <option value="Option 1">Option 1</option>
                                                                     <option value="Option 2">Option 2</option>
                                                                     <option value="Option 3">Option 3</option>
-                                                                    <option value="Option 4">Option 4</option>
+                                                                    <option value="Option 4">Self</option>
                                                                 </select>
-                                                                <span role="button"
-                                                                    class="mdi mdi-arrow-down-drop-circle fs-4 text-primary mx-2"></span>
+                                                                <!-- <span role="button"
+                                                                    class="mdi mdi-arrow-down-drop-circle fs-4 text-primary mx-2"></span> -->
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6 col-sm-6">
                                                             <label>Occupation</label>
                                                             <input type="text" class="form-control form-control-sm"
                                                                 placeholder="Text" />
+                                                        </div>
+                                                        <hr>
+                                                        <div class="col-lg-6 col-sm-6 mt-2">
+                                                            <label>Case Manager<span class="text-danger">
+                                                                    *</span></label>
+                                                            <div class="d-flex align-items-center">
+                                                                <select class="form-select form-select-sm">
+                                                                    
+                                                                    <option selected value="Option 1">Option 1</option>
+                                                                    <option value="Option 2">Option 2</option>
+                                                                    <option value="Option 3">Option 3</option>
+                                                                    <option value="Option 4">Option 4</option>
+                                                                </select>
+                                                                <!-- <span role="button"
+                                                                    class="mdi mdi-arrow-down-drop-circle fs-4 text-primary mx-2"></span> -->
+                                                            </div>
                                                         </div>
                                                         <!-- <div class=" col-12 ">
                                                             <div class="card rounded-0 bg-light p-2">
@@ -488,7 +525,7 @@
                                                                 Delete
                                                             </button>
                                                             <button class="btn btn-primary btn-sm px-4">
-                                                                Next
+                                                                Save & Continue
                                                             </button>
                                                         </div>
                                                     </form>
@@ -542,7 +579,7 @@
                                                         <div class="col-lg-3 col-sm-6">
                                                             <label>ZipCode<span class="text-danger"> *</span></label>
                                                             <select class="form-select form-select-sm">
-                                                                <option selected class="text-muted">ZipCode </option>
+                                                                <option selected class="text-muted">Select zip code </option>
                                                                 <option value="Option 1">Option 1</option>
                                                                 <option value="Option 2">Option 2</option>
                                                                 <option value="Option 3">Option 3</option>
@@ -572,7 +609,7 @@
                                                                     Cancel
                                                                 </button>
                                                                 <button class="btn btn-primary btn-sm px-4">
-                                                                    Next
+                                                                    Save & Continue
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -597,18 +634,32 @@
                                                             <label>Preferred Language</label>
                                                             <select class="form-select form-select-sm">
                                                                 <option selected class="text-muted">Select</option>
-                                                                <option value="Option 1">Option 1</option>
-                                                                <option value="Option 2">Option 2</option>
-                                                                <option value="Option 3">Option 3</option>
+                                                                <option value="Option 1">Spanish</option>
+                                                                <option value="Option 2">Russian</option>
+                                                                <option value="Option 3">French</option>
+                                                                <option value="Option 4">Korean</option>
+                                                                <option value="Option 5">Arabic</option>
+                                                                <option value="Option 6">English</option>
+                                                                <option value="Option 7">German</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
                                                             <label>Relationship</label>
                                                             <select class="form-select form-select-sm">
                                                                 <option selected class="text-muted">Select</option>
-                                                                <option value="Option 1">Option 1</option>
-                                                                <option value="Option 2">Option 2</option>
-                                                                <option value="Option 3">Option 3</option>
+                                                                <option value="Option 1">Self</option>
+                                                                <option value="Option 2">Spouse</option>
+                                                                <option value="Option 3">Grandfather or Grandmother</option>
+                                                                <option value="Option 4">Gandson, Granddaughter</option>
+                                                                <option value="Option 5">Nephew or Niece</option>
+                                                                <option value="Option 6">Adopted Child</option>
+                                                                <option value="Option 7">Foster Child</option>
+                                                                <option value="Option 8">Ward</option>
+                                                                <option value="Option 9">Stepson or Stepdaughter</option>
+                                                                <option value="Option 10">Child</option>
+                                                                <option value="Option 11">Employee</option>
+                                                                <option value="Option 12">Unknown</option>
+                                                                <option value="Option 13">Handicapped Dependent</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
@@ -805,7 +856,7 @@
                                                                     Cancel
                                                                 </button>
                                                                 <button class="btn btn-primary btn-sm px-4">
-                                                                    Next
+                                                                    Save & Continue
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -830,7 +881,7 @@
                                                                 </div>
                                                                 <span class="text-primary">clear All</span>
                                                             </div>
-                                                            <div class="card p-2 my-1">
+                                                            <div class="card p-2 my-1 ">
                                                                 <label>Filter Races</label>
                                                                 <div class="input-group mb-2">
                                                                     <input type="text"
@@ -841,7 +892,7 @@
                                                                     <span
                                                                         class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
                                                                 </div>
-                                                                <div class="card p-2 ">
+                                                                <div class="card p-2  ">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="checkbox">
                                                                         <label class="form-check-label">
@@ -851,7 +902,19 @@
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="checkbox">
                                                                         <label class="form-check-label">
-                                                                            AMERICAN INDIAN OR ALASK ASIAN
+                                                                            ASIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            WHITE
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AMERICAN INDIAN
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check">
@@ -863,7 +926,7 @@
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="checkbox">
                                                                         <label class="form-check-label">
-                                                                            NATIVE HAWAIIAN OR OTHER WHITE
+                                                                            NATIVE HAWAIIAN OR OTHERS
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check">
@@ -882,6 +945,180 @@
                                                                         <input class="form-check-input" type="checkbox">
                                                                         <label class="form-check-label">
                                                                             ACOMA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AFGHANISTAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AFRICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AGDAAGUX
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AGUA Caliente
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AGUA CALIENTE CAHUILLA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AHTNA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AK-CHIN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AKHIOK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AKIAK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AKIACHAK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            AKUTAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALABAMA COUSHATTA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALABAMA CREEK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALABAMA QUASSARTE
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALAKANUK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALAMO NAVAJO
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALAVIK 
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALASKAINDIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALASKA NATIVE
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALASKAN ATHABASCAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALATNA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEKNAGIK
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEUT
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEUT CORPORATION
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEUTIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEUTIAN ISLANDER
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALEXANDER
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALGONQUIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ALLAKAKET 
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -980,6 +1217,221 @@
                                                                             BOLIVIAN
                                                                         </label>
                                                                     </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CANAL ZONE
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CANARIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CASTILIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CATALONIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CENTRAL AMERICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CENTRAL AMERICAN INDIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CHICANO
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CHILEAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            COLOMBIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            COSTA RICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CRIOLLO
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            CUBAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            DOMINICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            ECUADORIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            GALLEGO
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            GUATEMALAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            HONDURAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            LA RAZA
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            LATIN AMERICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            MEXICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            MEXICAN AMERICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            MEXICAN AMERICAN INDIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            MEXICANO
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            NICARAGUAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            PANAMANIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            PARAGUAYAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            PERUVIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            PUERTO RICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            SALVADORAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            SOUTH AMERICAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            SOUTH AMERICAN INDIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            SPANIARD
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            SPANISH BASQUE
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            URUGUAYAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            VALENCIAN
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox">
+                                                                        <label class="form-check-label">
+                                                                            VENEZUELA
+                                                                        </label>
                                                                 </div>
                                                             </div>
                                                             <div class="form-check">
