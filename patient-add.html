@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    
 </head>
 <body>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#multiselect').multiselect();
+        });
+        </script>
     <div class="container-scroller">
         <!-- Top header --> 
         <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 d-flex flex-row fixed-top">
@@ -28,7 +34,7 @@
                 </button>
                 <div class="input-group input-group-sm d-none d-md-flex me-5 w-25">
                     <input type="search" class="form-control border-0" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm" placeholder="Search" />
+                        aria-describedby="inputGroup-sizing-sm" placeholder="Search patient" />
                     <span class="input-group-text bg-white border-0 text-gray">
                         <i class="border-0 fa-solid fa-magnifying-glass"></i></span>
                 </div>
@@ -385,7 +391,7 @@
                                                             </select>
                                                         </div>
                                                         <div class="col-lg-4 col-sm-6">
-                                                            <label>Chart Number></label>
+                                                            <label>Chart Number</label>
                                                             <input type="text"
                                                                 class="form-control form-control-sm bg-light"
                                                                 placeholder="" />
@@ -522,7 +528,7 @@
                                                         </div> -->
                                                         <div class="col-12 d-flex justify-content-between mt-5">
                                                             <button class="btn btn-danger btn-sm">
-                                                                Delete
+                                                                Clear
                                                             </button>
                                                             <button class="btn btn-primary btn-sm px-4">
                                                                 Save & Continue
@@ -603,7 +609,7 @@
                                                                 placeholder="Email" />
                                                         </div>
                                                         <div class="col-12 d-flex justify-content-between mt-5">
-                                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                                            <button class="btn btn-danger btn-sm">Clear</button>
                                                             <div>
                                                                 <button class="btn text-danger btn-sm">
                                                                     Cancel
@@ -850,7 +856,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-12 d-flex justify-content-between mt-5">
-                                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                                            <button class="btn btn-danger btn-sm">Clear</button>
                                                             <div>
                                                                 <button class="btn text-danger btn-sm">
                                                                     Cancel
@@ -867,21 +873,11 @@
                                                 aria-labelledby="v-pills-races-tab" tabindex="0">
                                                 <h6 class="border-bottom border-top p-3">Races and Ethnicity</h6>
                                                 <div class="p-3">
-                                                    <div class="row g-4">
-                                                        <div class="col-lg-6 col-sm-12">
-                                                            <h6>Races</h6>
-                                                            <div class="form-check d-flex justify-content-between">
-                                                                <div>
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault" id="flexRadioDefault1">
-                                                                    <label class="form-check-label"
-                                                                        for="flexRadioDefault1">
-                                                                        Specify Race
-                                                                    </label>
-                                                                </div>
-                                                                <span class="text-primary">clear All</span>
-                                                            </div>
-                                                            <div class="card p-2 my-1 ">
+                                                    <div class="row">
+                                                        <p class="fw-bold">Race Selection</p>
+                                                        <div class="col-5">
+                                                            <div class="form-control">
+                                                                <h5 class="text-primary fw-semibold">Available</h5>
                                                                 <label>Filter Races</label>
                                                                 <div class="input-group mb-2">
                                                                     <input type="text"
@@ -892,573 +888,175 @@
                                                                     <span
                                                                         class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
                                                                 </div>
-                                                                <div class="card p-2  ">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            DECLINED TO SPECIFY
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ASIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            WHITE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AMERICAN INDIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            BLACK OR AFRICAN AMERICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            NATIVE HAWAIIAN OR OTHERS
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ABENAKI
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ABSENTEE SHAWNEE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ACOMA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AFGHANISTAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AFRICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AGDAAGUX
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AGUA Caliente
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AGUA CALIENTE CAHUILLA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AHTNA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AK-CHIN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AKHIOK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AKIAK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AKIACHAK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AKUTAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALABAMA COUSHATTA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALABAMA CREEK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALABAMA QUASSARTE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALAKANUK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALAMO NAVAJO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALAVIK 
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALASKAINDIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALASKA NATIVE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALASKAN ATHABASCAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALATNA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEKNAGIK
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEUT
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEUT CORPORATION
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEUTIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEUTIAN ISLANDER
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALEXANDER
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALGONQUIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ALLAKAKET 
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
+                                                            <select name="from[]" id="multiselect" class="form-control" size="8" multiple="multiple">
+                                                                <option value="1">DECLINED TO SPECIFY</option>
+                                                                <option value="2">ASIAN</option>
+                                                                <option value="3">WHITE</option>
+                                                                <option value="4">AMERICAN INDIAN</option>
+                                                                <option value="5">BLACK OR AFRICAN AMERICAN</option>
+                                                                <option value="6">NATIVE HAWAIIAN OR OTHERS</option>
+                                                                <option value="7">ABENAKI</option>
+                                                                <option value="8">ABSENTEE SHAWNEE</option>
+                                                                <option value="9">ACOMA</option>
+                                                                <option value="10">AFGHANISTAN</option>
+                                                                <option value="11">AFRICAN</option>
+                                                                <option value="12">AGDAAGUX</option>
+                                                                <option value="13">AGUA Caliente</option>
+                                                                <option value="14">AGUA CALIENTE CAHUILLA</option>
+                                                                <option value="15">AHTNA</option>
+                                                                <option value="16">AK-CHIN</option>
+                                                                <option value="17">AKHIOK</option>
+                                                                <option value="18">AKIAK</option>
+                                                                <option value="19">AKIACHAK</option>
+                                                                <option value="20">AKUTAN</option>
+                                                                <option value="21">ALABAMA COUSHATTA</option>
+                                                                <option value="22">ALABAMA CREEK</option>
+                                                                <option value="23">ALABAMA QUASSARTE</option>
+                                                                <option value="24">ALAKANUK</option>
+                                                                <option value="25">ALAMO NAVAJO</option>
+                                                                <option value="26">ALAVIK </option>
+                                                                <option value="27">ALASKAINDIAN</option>
+                                                                <option value="28">ALASKA NATIVE</option>
+                                                                <option value="29">ALASKAN ATHABASCAN</option>
+                                                                <option value="30">ALATNA</option>
+                                                                <option value="31">ALEKNAGIK</option>
+                                                                <option value="32">ALEUT</option>
+                                                                <option value="33">ALEUT CORPORATION</option>
+                                                                <option value="34">ALEUTIAN</option>
+                                                                <option value="35">ALEUTIAN ISLANDER</option>
+                                                                <option value="36">ALEXANDER</option>
+                                                                <option value="37">ALGONQUIAN</option>
+                                                                <option value="38">ALLAKAKET </option>
+                                                            </select>
                                                             </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                    name="flexRadioDefault" id="flexRadioDefault1">
-                                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                                    Patient declined to specify
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                    name="flexRadioDefault" id="flexRadioDefault1">
-                                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                                    Provider did not ask
-                                                                </label>
-                                                            </div>
+                                                            
                                                         </div>
-                                                        <div class="col-lg-6 col-sm-12">
-                                                            <h6>Ethnicity</h6>
-                                                            <div class="form-check d-flex justify-content-between">
-                                                                <div>
-                                                                    <input class="form-check-input" type="radio"
-                                                                        name="flexRadioDefault2" id="flexRadioDefault2">
-                                                                    <label class="form-check-label"
-                                                                        for="flexRadioDefault2">
-                                                                        Hispanic or Latino
-                                                                    </label>
-                                                                </div>
-                                                                <span class="text-primary">clear All</span>
-                                                            </div>
-                                                            <div class="card p-2 my-1">
-                                                                <label>Filter Ethnicities</label>
+                                                        
+                                                        <div class="col-2 d-flex flex-column justify-content-center g-3">
+                                                            <!-- <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="fa fa-forward"></i></button> -->
+                                                            <button type="button" id="multiselect_rightSelected" class="btn btn-primary btn-sm mb-2"><i class="fa fa-chevron-right"></i></button>
+                                                            <button type="button" id="multiselect_leftSelected" class="btn btn-primary btn-sm"><i class="fa fa-chevron-left"></i></button>
+                                                            <!-- <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="fa fa-backward"></i></button> -->
+                                                        </div>
+                                                        
+                                                        <div class="col-5 ">
+                                                            <div class="form-control">
+                                                                <h5 class="text-warning fw-semibold">Selected</h5>
+                                                                <label>Filter Races</label>
                                                                 <div class="input-group mb-2">
                                                                     <input type="text"
                                                                         class="form-control form-control-sm border-end-0"
-                                                                        placeholder="Search Hispanic or Latino ethnicity"
+                                                                        placeholder="Search to select race"
                                                                         aria-label="Username"
                                                                         aria-describedby="basic-addon1">
                                                                     <span
                                                                         class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
                                                                 </div>
-                                                                <div class="card p-2 ">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            DECLINED TO SPECIFY
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            HISPANIC OR LATINO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            NOT HISPANIC OR LATINO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            UNKNOWN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ANDALLUSIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ARGENTINEAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            AUSTRIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            BELEARIC ISLANDER
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            BOLIVIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CANAL ZONE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CANARIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CASTILIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CATALONIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CENTRAL AMERICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CENTRAL AMERICAN INDIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CHICANO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CHILEAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            COLOMBIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            COSTA RICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CRIOLLO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            CUBAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            DOMINICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            ECUADORIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            GALLEGO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            GUATEMALAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            HONDURAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            LA RAZA
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            LATIN AMERICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            MEXICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            MEXICAN AMERICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            MEXICAN AMERICAN INDIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            MEXICANO
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            NICARAGUAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            PANAMANIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            PARAGUAYAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            PERUVIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            PUERTO RICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            SALVADORAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            SOUTH AMERICAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            SOUTH AMERICAN INDIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            SPANIARD
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            SPANISH BASQUE
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            URUGUAYAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            VALENCIAN
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <label class="form-check-label">
-                                                                            VENEZUELA
-                                                                        </label>
-                                                                </div>
+                                                            <select name="to[]" id="multiselect_to" class="form-control bg-info" size="8" multiple="multiple"></select>
                                                             </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                    name="flexRadioDefault2" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                                    Patient declined to specify
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio"
-                                                                    name="flexRadioDefault2" id="flexRadioDefault2">
-                                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                                    Provider did not ask
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 d-flex justify-content-end mt-5">
-                                                            <button class="btn text-danger bg-transparent btn-sm me-2">
-                                                                Cancel
-                                                            </button>
-                                                            <button class="btn btn-primary btn-sm px-4">
-                                                                Save
-                                                            </button>
+                                                            
                                                         </div>
                                                     </div>
-                                                </div>
+                                                    <div class="row mt-4">
+                                                        <p class="fw-bold">Ethnicity Selection</p>
+                                                        <div class="col-5">
+                                                            <div class="form-control">
+                                                                <h5 class="text-primary fw-semibold">Available</h5>
+                                                                <label>Filter Ethnicity</label>
+                                                                <div class="input-group mb-2">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm border-end-0"
+                                                                        placeholder="Search to select race"
+                                                                        aria-label="Username"
+                                                                        aria-describedby="basic-addon1">
+                                                                    <span
+                                                                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                                                                </div>
+                                                            <select name="from[]" id="multiselect" class="form-control" size="8" multiple="multiple">
+                                                                <option value="111">DECLINED TO SPECIFY</option>
+                                                                <option value="211">HISPANIC OR LATINO</option>
+                                                                <option value="311">NOT HISPANIC OR LATINO</option>
+                                                                <option value="411">UNKNOWN</option>
+                                                                <option value="511">ANDALLUSIAN</option>
+                                                                <option value="611">ARGENTINEAN</option>
+                                                                <option value="711">AUSTRIAN</option>
+                                                                <option value="811">BELEARIC ISLANDER</option>
+                                                                <option value="911">BOLIVIAN</option>
+                                                                <option value="1011">CANAL ZONE</option>
+                                                                <option value="1111">CANARIAN</option>
+                                                                <option value="1211">CASTILIAN</option>
+                                                                <option value="1311">CATALONIAN</option>
+                                                                <option value="1411">CENTRAL AMERICAN</option>
+                                                                <option value="1511">CENTRAL AMERICAN INDIAN</option>
+                                                                <option value="1611">CHICANO</option>
+                                                                <option value="1711">CHILEAN</option>
+                                                                <option value="1811">COLOMBIAN</option>
+                                                                <option value="1911">COSTA RICAN</option>
+                                                                <option value="2011">CRIOLLO</option>
+                                                                <option value="2111">CUBAN</option>
+                                                                <option value="2211">DOMINICAN</option>
+                                                                <option value="2311">ECUADORIAN</option>
+                                                                <option value="2411">GALLEGO</option>
+                                                                <option value="2511">GUATEMALAN</option>
+                                                                <option value="2611">HONDURAN</option>
+                                                                <option value="2711">LA RAZA</option>
+                                                                <option value="2811">LATIN AMERICAN</option>
+                                                                <option value="2911">MEXICAN</option>
+                                                                <option value="3011">MEXICAN AMERICAN</option>
+                                                                <option value="3111">MEXICAN AMERICAN INDIAN</option>
+                                                                <option value="3211">MEXICANO</option>
+                                                                <option value="3311">NICARAGUAN</option>
+                                                                <option value="3411">PANAMANIAN</option>
+                                                                <option value="3511">PARAGUAYAN</option>
+                                                                <option value="3611">PERUVIAN</option>
+                                                                <option value="3711">PUERTO RICAN</option>
+                                                                <option value="3811">SALVADORAN</option>
+                                                                <option value="3911">SOUTH AMERICAN</option>
+                                                                <option value="4011">SOUTH AMERICAN INDIAN</option>
+                                                                <option value="4111">SPANIARD</option>
+                                                                <option value="4211">SPANISH BASQUE</option>
+                                                                <option value="4311">URUGUAYAN</option>
+                                                                <option value="4411">VALENCIAN</option>
+                                                                <option value="4511">VENEZUELA</option>
+                                                            </select>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        
+                                                        <div class="col-2 d-flex flex-column justify-content-center ">
+                                                            <!-- <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="fa fa-forward"></i></button> -->
+                                                            <button type="button" id="multiselect_rightSelected" class="btn btn-primary btn-sm mb-2"><i class="fa fa-chevron-right"></i></button>
+                                                            <button type="button" id="multiselect_leftSelected" class="btn btn-primary btn-sm"><i class="fa fa-chevron-left"></i></button>
+                                                            <!-- <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="fa fa-backward"></i></button> -->
+                                                        </div>
+                                                        
+                                                        <div class="col-5 ">
+                                                            <div class="form-control">
+                                                                <h5 class="text-warning fw-semibold">Selected</h5>
+                                                                <label>Filter Ethnicity</label>
+                                                                <div class="input-group mb-2">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-sm border-end-0"
+                                                                        placeholder="Search to select race"
+                                                                        aria-label="Username"
+                                                                        aria-describedby="basic-addon1">
+                                                                    <span
+                                                                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                                                                </div>
+                                                            <select name="to[]" id="multiselect_to" class="form-control bg-info" size="8" multiple="multiple"></select>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 d-flex justify-content-end mt-5">
+                                                        <button class="btn btn-outline-danger btn-sm">
+                                                            Cancel
+                                                        </button>
+                                                        <button class="btn btn-primary btn-sm px-4 ms-2">
+                                                            Save 
+                                                        </button>
+                                                    </div>
+                                                    
                                             </div>
                                         </div>
                                     </div>
@@ -1483,12 +1081,15 @@
         <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
+   
     <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/vendors/js/perfect-scrollbar.min.js"></script>
     <script src="assets/js/off-canvas.js"></script>
     <script src="assets/js/hoverable-collapse.js"></script>
     <script src="assets/js/misc.js"></script>
+    <script src="assets/js/multi-select.js"></script>
+    <script src="assets/js/multi-select1.js"></script>
 </body>
 
 </html>
