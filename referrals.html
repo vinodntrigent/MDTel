@@ -286,6 +286,9 @@
                           data-bs-target="#addModal">
                           <i class="fa fa-plus me-2 fs-5"></i>Add Referral-in
                         </button>
+                        <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
+                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <i class="mdi mdi-filter me-2"></i>Filter</button>
                         </div>
                         
                       </div>
@@ -338,6 +341,9 @@
                           data-bs-target="#addModal2">
                           <i class="fa fa-plus me-2 fs-5"></i>Add Referral-Out
                         </button>
+                        <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
+                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <i class="mdi mdi-filter me-2"></i>Filter</button>
                         </div>
                         
                       </div>
@@ -977,6 +983,94 @@
                 Ok
               </button>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title text-primary" id="offcanvasRightLabel">Filter</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <div class="row g-3">
+            <div class="col-12">
+              <label>Referred By</label>
+              <div class="input-group">
+                <input type="search"
+                    class="form-control form-control-sm border-end-0"
+                    placeholder="Search"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1">
+                <span
+                    class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <label>Referred To</label>
+            <div class="input-group">
+              <input type="search"
+                  class="form-control form-control-sm border-end-0"
+                  placeholder="Search"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1">
+              <span
+                  class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+          </div>
+        </div>
+            <div class="col-12">
+              <label for="status">Organization</label>
+              <select class="form-select form-select-sm"
+                  aria-label="Default select example">
+                  <option selected class="text-muted">Select</option>
+                  <option value="Option 1">Option 1</option>
+                  <option value="Option 2">Option 2</option>
+                  <option value="Option 3">Option 3</option>
+                  <option value="Option 4">Option 4</option>
+              </select>
+          </div>
+          <div class="col-12">
+            <label for="from-date">From Date</label>
+            <input type="date" class="form-control form-control-sm" id="from-date" />
+          </div>
+          <div class="col-12">
+            <label for="to-date">To Date</label>
+            <input type="date" class="form-control form-control-sm" id="to-date" />
+          </div>
+          <div class="col-12">
+            <label for="status">Status</label>
+            <select class="form-select form-select-sm"
+                aria-label="Default select example">
+                <option selected class="text-muted">Select</option>
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+            </select>
+        </div>
+        <div class="col-12">
+          <label>Authorization ID</label>
+          <div class="input-group">
+            <input type="search"
+                class="form-control form-control-sm border-end-0"
+                placeholder="Search"
+                aria-label="Username"
+                aria-describedby="basic-addon1">
+            <span
+                class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+        </div>
+      </div>
+   
+          </div>
+          <div class="row g-3">
+            <div class="col-12 d-flex justify-content-end mt-5 align-items-">
+              <button class="btn text-danger bg-transparent btn-sm me-2">
+                  Clear
+              </button>
+              <button class="btn btn-primary btn-sm px-4">
+                  Apply Filter
+              </button>
+          </div>
           </div>
         </div>
       </div>
