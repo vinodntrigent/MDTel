@@ -298,12 +298,16 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Gender</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">select</option>
-                                <option value="Active">Option1</option>
-                                <option value="Pending">Option2</option>
-                                <option value="Delayed">Option3</option>
-                              </select>
+                              <select class="form-select form-select-sm">
+                                <option selected class="text-muted">Select</option>
+                                <option value="Option 1">Male</option>
+                                <option value="Option 2">Female</option>
+                                <option value="Option 3">Transgender Male/ Trans Man/Female-to-Man</option>
+                                <option value="Option 4">Transgender Female/ Trans Female/ Man-to-Female</option>
+                                <option value="Option 5">GenderQueer neither exclusive Male nor female</option>
+                                <option value="Option 6">Additional gender category/ Other</option>
+                                <option value="Option 7">Decline to answer</option>
+                            </select>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Current Risk level</label>
@@ -363,7 +367,23 @@
                       <div id="flush-collapseOne1" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
-                          <p>CONTENT IN SRS NOT CLEAR</p>
+                          <form class="row g-3">
+                            <div class="col-lg-4 col-sm-4">
+                              <label for="organization">Name</label>
+                              <input type="text" class="form-control form-control-sm " id="organization"
+                                placeholder="Name" disabled/>
+                            </div>
+                            <div class="col-lg-4 col-sm-4">
+                              <label for="organization">Email</label>
+                              <input type="text" class="form-control form-control-sm " id="organization"
+                                placeholder="xyz@gmail.com" disabled/>
+                            </div>
+                            <div class="col-lg-4 col-sm-4">
+                              <label for="from-date">Contact Number</label>
+                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" disabled/>
+                            </div>
+                            
+                          </form>
                         </div>
                       </div>
                     </div>
@@ -381,48 +401,39 @@
                           
                           <form class="row g-3">
                             <div class="col-lg-6 col-sm-6">
-                              <label for="organization">Member ID</label>
+                              <label for="organization">Name</label>
                               <input type="text" class="form-control form-control-sm " id="organization"
-                                placeholder="xxxxxxxx" disabled/>
+                                placeholder="Enter Name" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
-                              <label for="status">Current Risk level</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">select</option>
-                                <option value="Active">High</option>
-                                <option value="Pending">Moderate</option>
-                                <option value="Delayed">Low</option>
+                              <label>Relationship</label>
+                              <select class="form-select form-select-sm">
+                                  <option selected class="text-muted">Select</option>
+                                  <option value="Option 1">Self</option>
+                                  <option value="Option 2">Spouse</option>
+                                  <option value="Option 3">Grandfather or Grandmother</option>
+                                  <option value="Option 4">Gandson, Granddaughter</option>
+                                  <option value="Option 5">Nephew or Niece</option>
+                                  <option value="Option 6">Adopted Child</option>
+                                  <option value="Option 7">Foster Child</option>
+                                  <option value="Option 8">Ward</option>
+                                  <option value="Option 9">Stepson or Stepdaughter</option>
+                                  <option value="Option 10">Child</option>
+                                  <option value="Option 11">Employee</option>
+                                  <option value="Option 12">Unknown</option>
+                                  <option value="Option 13">Handicapped Dependent</option>
                               </select>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="status">Note Type</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Open this select menu</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="from-date">Date</label>
-                              <input type="date" class="form-control form-control-sm" id="from-date" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="organization">Age at Encounter</label>
-                              <input type="text" class="form-control form-control-sm" id="organization"
-                                placeholder="Text" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="organization">Organization</label>
-                              <input type="text" class="form-control form-control-sm" id="organization"
-                                placeholder="Search" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="provider-type">Seen By</label>
-                              <input type="text" class="form-control form-control-sm" id="provider-type"
-                                placeholder="Text" />
-                            </div>
+                          </div>
+                          
+                          <div class="col-lg-6 col-sm-6">
+                            <label for="organization">Email</label>
+                            <input type="text" class="form-control form-control-sm " id="organization"
+                              placeholder="xyz@gmail.com" />
+                          </div>
+                          <div class="col-lg-6 col-sm-6">
+                            <label for="from-date">Contact Number</label>
+                            <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
+                          </div>
                           </form>
                         </div>
                       </div>
@@ -438,7 +449,33 @@
                       <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
-                          <p>CONTENT IN SRS NOT CLEAR</p>
+                          <div class="d-flex justify-content-end mb-2">
+                            <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
+                            data-bs-target="#addallergy">
+                            <i class="fa fa-plus me-2 fs-5"></i>Add Allergy
+                          </button>
+                          </div>
+                          
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Date</th>
+                                  <th>Details</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -457,24 +494,76 @@
                             <table class="table table-bordered table-striped table-hover">
                               <thead>
                                 <tr class="text-white">
-                                  <th>Date of Service</th>
-                                  <th>Drug Category</th>
-                                  <th>Medication Label</th>
-                                  <th>Member Reported</th>
+                                  <th>Medication Name</th>
+                                  <th>SIG</th>
+                                  <th>Prescriber's Name</th>
+                                  <th>Start Date</th>
+                                  <th>Stop Date</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>DD/MM/YYYY</td>
-                                  <td>lorem ipsum dolor cando ispum alinga </td>
-                                  <td>1219387</td>
-                                  <td>Richard Sam</td>
+                                  <td>Heights</td>
+                                  <td>67 in</td>
+                                  <td>PRE 1</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
                                 </tr>
                                 <tr>
-                                  <td>DD/MM/YYYY</td>
-                                  <td>lorem ipsum dolor cando ispum alinga </td>
-                                  <td>4532312</td>
-                                  <td>Robert San</td>
+                                  <td>Weights</td>
+                                  <td>172 lb</td>
+                                  <td>PRE 2</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>BMI</td>
+                                  <td>26.94</td>
+                                  <td>PRE 3</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>BP</td>
+                                  <td>137/80 mmHg</td>
+                                  <td>PRE 4</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>Pulse</td>
+                                  <td>80 bpm</td>
+                                  <td>PRE 5</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>Temperature</td>
+                                  <td>98.4^F</td>
+                                  <td>PRE 6</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>Respiratory Rate</td>
+                                  <td>17 bpm</td>
+                                  <td>PRE 7</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>OZ Saturation</td>
+                                  <td>98 %</td>
+                                  <td>PRE 8</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>Pain</td>
+                                  <td>0</td>
+                                  <td>PRE 9</td>
+                                  <td>MM/DD/YYYY</td>
+                                  <td>MM/DD/YYYY</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -493,7 +582,29 @@
                       <div id="flush-collapsethree" class="accordion-collapse collapse bg-info"
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
-                          <p>CONTENT IN SRS NOT CLEAR</p>
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Date</th>
+                                  <th>Health Concern</i></th>
+                                  <th>Note</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>High</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>Medium</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -783,6 +894,36 @@
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
               Ok
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal  fade" id="addallergy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Add Allergy</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-lg-12 col-sm-12">
+                <label for="from-date">Date</label>
+                <input type="date" class="form-control form-control-sm" id="from-date" />
+              </div>
+              <div class="col-lg-12 col-sm-12">
+                <label for="contact-number">Details</label>
+                <textarea class="form-control form-control-sm "placeholder="Text" rows="4"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary btn-sm px-5">
+              Save
             </button>
           </div>
         </div>

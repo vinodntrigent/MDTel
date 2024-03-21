@@ -358,7 +358,29 @@
                           <button class="btn btn-sm btn-warning ms-1 "><i class="mdi mdi-pencil"></i></button>
                           </div>
                           
-                          <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Date</th>
+                                  <th>Health Concern</i></th>
+                                  <th>Note</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>High</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                                <tr>
+                                  <td>DD-MM-YYYY</td>
+                                  <td>Medium</td>
+                                  <td>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -4784,7 +4806,9 @@
                 <label for="from-date">Date</label>
                               <input type="date" class="form-control form-control-sm" id="from-date" />
               </div>
-
+              <div class="col-12">
+                <textarea class="form-control form-control-sm " placeholder="text" rows="3"></textarea>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
