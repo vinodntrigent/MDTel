@@ -285,21 +285,19 @@
                             <div class="col-lg-6 col-sm-6">
                               <label for="status">Encounter Type</label>
                               <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Open this select menu</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
+                                <option selected class="text-muted">Select</option>
+                                <option value="Active">New Encounter</option>
+                                <option value="Pending">Follow up Encounter</option>
                               </select>
                             </div>
                             <div class="col-lg-6 col-sm-6">
                               <label for="status">Note Type</label>
                               <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Open this select menu</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
+                                <option selected class="text-muted">Select</option>
+                                <option value="Active">SOAP</option>
+                                <option value="Pending">Case Management Note</option>
+                                <option value="Delayed">Nursing Note</option>
+                                <option value="completed">Social Worker Note</option>
                               </select>
                             </div>
                             <div class="col-lg-6 col-sm-6">
@@ -627,10 +625,11 @@
                                       <input type="text" class="form-control form-control-sm " id="organization"
                                         placeholder="xxxxxxxx" disabled/>
                                     </div>
+                                    
                                     <div class="col-lg-6 col-sm-6">
-                                      <label for="organization">Member CIN</label>
+                                      <label for="organization">Primary Language</label>
                                       <input type="text" class="form-control form-control-sm " id="organization"
-                                        placeholder="xxxxxxxx" disabled/>
+                                        placeholder="Enter Language" disabled/>
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                       <label for="from-date">Date of Birth</label>
@@ -638,12 +637,16 @@
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                       <label for="status">Gender</label>
-                                      <select class="form-select form-select-sm" aria-label="Default select example">
-                                        <option selected class="text-muted">select</option>
-                                        <option value="Active">Option1</option>
-                                        <option value="Pending">Option2</option>
-                                        <option value="Delayed">Option3</option>
-                                      </select>
+                                      <select class="form-select form-select-sm">
+                                        <option selected class="text-muted">Select</option>
+                                        <option value="Option 1">Male</option>
+                                        <option value="Option 2">Female</option>
+                                        <option value="Option 3">Transgender Male/ Trans Man/Female-to-Man</option>
+                                        <option value="Option 4">Transgender Female/ Trans Female/ Man-to-Female</option>
+                                        <option value="Option 5">GenderQueer neither exclusive Male nor female</option>
+                                        <option value="Option 6">Additional gender category/ Other</option>
+                                        <option value="Option 7">Decline to answer</option>
+                                    </select>
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                       <label for="status">Current Risk level</label>
@@ -654,25 +657,20 @@
                                         <option value="Delayed">Low</option>
                                       </select>
                                     </div>
-                                    <div class="col-lg-3 col-sm-3">
+                                    <div class="col-lg-4 col-sm-4">
                                       <label for="organization">Home Phone</label>
                                       <input type="text" class="form-control form-control-sm " id="organization"
                                         placeholder="xxx-xxx-xxxx" disabled/>
                                     </div>
-                                    <div class="col-lg-3 col-sm-3">
+                                    <div class="col-lg-4 col-sm-4">
                                       <label for="organization">Mobile Phone</label>
                                       <input type="text" class="form-control form-control-sm " id="organization"
                                         placeholder="xxx-xxx-xxxx" disabled/>
                                     </div>
-                                    <div class="col-lg-3 col-sm-3">
+                                    <div class="col-lg-4 col-sm-4">
                                       <label for="organization">Primary Phone</label>
                                       <input type="text" class="form-control form-control-sm " id="organization"
                                         placeholder="xxx-xxx-xxxx" disabled/>
-                                    </div>
-                                    <div class="col-lg-3 col-sm-3">
-                                      <label for="organization">Primary Language</label>
-                                      <input type="text" class="form-control form-control-sm " id="organization"
-                                        placeholder="Enter Language" disabled/>
                                     </div>
                                     <div class="col-lg-4 col-sm-4">
                                       <label for="organization">Email Address</label>
@@ -3186,10 +3184,12 @@
                                             <div class="col-lg-3 col-sm-4 me-3 me-4">
                                               <select class="form-select form-select-sm" aria-label="Default select example">
                                                 <option selected class="text-muted">Select</option>
-                                                <option value="Active">Active</option>
-                                                <option value="Pending">Pending</option>
-                                                <option value="Delayed">Delayed</option>
-                                                <option value="completed">completed</option>
+                                                <option value="Active">None</option>
+                                                <option value="Pending">I never feel lonely</option>
+                                                <option value="Delayed">Less than 5 days</option>
+                                                <option value="completed">More than half the days or more than 15</option>
+                                                <option value="1">I always feel lonely</option>
+                                                <option value="2">N/A</option>
                                               </select>
                                             </div>
                                           </div>
@@ -3264,14 +3264,17 @@
                                   <ol>
                                     <li class="mb-2">
                                       <p class="mb-2">What is your highest level of education?</p>
-                                      <label for="status">Does the place where you live have?</label>
                                       <div class="col-lg-4 col-sm-4">
                                         <select class="form-select form-select-sm" aria-label="Default select example">
-                                          <option selected class="text-muted">Open this select menu</option>
-                                          <option value="Active">Active</option>
-                                          <option value="Pending">Pending</option>
-                                          <option value="Delayed">Delayed</option>
-                                          <option value="completed">completed</option>
+                                          <option selected class="text-muted">Select</option>
+                                          <option value="Active">Higher education</option>
+                                          <option value="Pending">Post graduate</option>
+                                          <option value="Delayed">High School</option>
+                                          <option value="completed">Middle school or secondary</option>
+                                          <option value="1">Elementary or Primary</option>
+                                          <option value="2">No formal education</option>
+                                          <option value="3">Declined</option>
+                                          <option value="4">N/A</option>
                                         </select>
                                       </div>
                                     </li>

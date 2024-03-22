@@ -394,6 +394,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="provider-name">Assign To</label>
+                  <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="text" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                  <label for="provider-name">Patient Name</label>
                   <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Patient name" />
                 </div>
                 <div class="col-lg-4 col-sm-4">
@@ -417,18 +421,22 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                  <label for="provider-type">Provider Type</label>
+                <div class="col-lg-4 col-sm-6">
+                  <label for="provider-type">Author</label>
                   <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Text" disabled />
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                   <label for="status">Task Type</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
+                    <option value="Active">Reminder task</option>
+                    <option value="Pending">Documents</option>
+                    <option value="Delayed">Referrals</option>
+                    <option value="completed">Medication</option>
+                    <option value="1">Lab results</option>
+                    <option value="2">Care plan update</option>
+                    <option value="3">Encounters</option>
+                    <option value="4">Unassigned notes</option>
                   </select>
                 </div>
               </form>

@@ -359,13 +359,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="status">ICD 10</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
+                  <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="provider-name">CPT code</label>
@@ -374,21 +368,25 @@
                 <div class="col-lg-4 col-sm-4">
                   <label for="status">Status</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
+                    <option selected class="text-muted">Select</option>
+                    <option value="Active">Pending</option>
+                    <option value="Pending">Seen</option>
+                    <option value="Delayed">No show</option>
+                    <option value="completed">Cancel by Patient</option>
+                    <option value="1">Cancel by Provider</option>
                   </select>
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="status">Reason / Appt Type</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
+                    <option selected class="text-muted">Select</option>
+                    <option value="Active">Annual Exam</option>
+                    <option value="Pending">Annual Physical exam</option>
+                    <option value="Delayed">Annual DEP screening</option>
+                    <option value="completed">Annual Women exam</option>
+                    <option value="1">Annual Male exam</option>
+                    <option value="2">New Visit</option>
+                    <option value="3">Follow up visit</option>
                   </select>
                 </div>
                 <div class="col-lg-4 col-sm-4">
