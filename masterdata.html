@@ -251,7 +251,7 @@
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Case Notes
+                  Master Data
                 </li>
               </ol>
             </nav>
@@ -273,7 +273,7 @@
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
-                    <h5>Case Notes</h5>
+                    <h5>Master Data</h5>
                   </div>
                   <div class="accordion accordion-flush " id="accordionFlushExample-parent">
                     <div class="accordion-item">
@@ -281,7 +281,7 @@
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                           aria-expanded="false" aria-controls="flush-collapseOne">
-                          Case Note Details
+                          PCP
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse bg-info"
@@ -289,41 +289,135 @@
                         <div class="accordion-body">
                           <form class="row g-3">
                             <div class="col-lg-6 col-sm-6">
-                              <label for="status">Encounter Type</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Select</option>
-                                <option value="Active">New Encounter</option>
-                                <option value="Pending">Follow up Encounter</option>
-                              </select>
+                                <label>Title</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
-                              <label for="status">Note Type</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Select</option>
-                                <option value="Active">SOAP</option>
-                                <option value="Pending">Case Management Note</option>
-                                <option value="Delayed">Nursing Note</option>
-                                <option value="completed">Social Worker Note</option>
-                              </select>
+                                <label>Name</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Enter Name" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
-                              <label for="from-date">Date</label>
-                              <input type="date" class="form-control form-control-sm" id="from-date" />
+                                <label>Address 1<span class="text-danger">
+                                        *</span></label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
                             </div>
                             <div class="col-lg-6 col-sm-6">
-                              <label for="organization">Age at Encounter</label>
-                              <input type="text" class="form-control form-control-sm" id="organization"
-                                placeholder="Text" />
+                                <label>Address 2</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
                             </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="organization">Organization</label>
-                              <input type="text" class="form-control form-control-sm" id="organization"
-                                placeholder="Search" />
+                            <div class="col-lg-3 col-sm-6">
+                                <label>Country<span class="text-danger">
+                                        *</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Select </option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="provider-type">Seen By</label>
-                              <input type="text" class="form-control form-control-sm" id="provider-type"
-                                placeholder="Text" />
+                            <div class="col-lg-3 col-sm-6">
+                                <label>State<span class="text-danger">
+                                        *</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Select </option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>City<span class="text-danger">
+                                        *</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Select </option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>Zip Code<span class="text-danger">
+                                        *</span></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Select </option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <label>Office</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="xxx-xxx-xxxx" />
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <label>Other</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="xxx-xxx-xxxx" />
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <label class=""></label>
+                                <select class="form-select form-select-sm">
+                                    <option selected>Cell </option>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                    <option value="Option 4">Option 4</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-sm-6">
+                                <label>Fax</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="xxx-xxx-xxxx" />
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <label>Email</label>
+                                <input type="email"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>Speciality</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>Practice</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>Taxonomy</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <label>NPI</label>
+                                <input type="text"
+                                    class="form-control form-control-sm"
+                                    placeholder="Text" />
+                                <div class="text-end">
+                                    <a href="" class="text-decoration-none">NPI
+                                        Registry</a>
+                                </div>
                             </div>
                           </form>
                         </div>

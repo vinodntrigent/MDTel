@@ -240,6 +240,12 @@
               <span class="menu-title">Timelines</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="masterdata.html">
+              <i class="mdi mdi-database-lock fs-5"></i>
+              <span class="menu-title">Master data</span>
+            </a>
+          </li>
         </ul>
       </nav>
       
@@ -360,14 +366,6 @@
             <div class="modal-body">
               <form class="row g-3">
                 <div class="col-lg-12 col-sm-12">
-                  <label for="from-date">Date/Time</label>
-                  <input type="date" class="form-control form-control-sm" id="from-date" />
-                </div>
-                <div class="col-lg-12 col-sm-12">
-                  <label for="provider-name">Event</label>
-                  <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
-                </div>
-                <div class="col-lg-12 col-sm-12">
                   <label for="state">Category</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">Select</option>
@@ -376,6 +374,14 @@
                     <option value="Delayed">Appointments</option>
                     <option value="completed">Assessments</option>
                   </select>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="from-date">Date/Time</label>
+                  <input type="date" class="form-control form-control-sm" id="from-date" />
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                  <label for="provider-name">Event</label>
+                  <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Text" />
                 </div>
                 <div class="col-lg-12 col-sm-12">
                   <label for="provider-name">Evidence</label>
