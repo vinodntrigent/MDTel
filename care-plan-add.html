@@ -300,11 +300,11 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="from-date">Date of Birth</label>
-                              <input type="date" class="form-control form-control-sm" id="from-date" />
+                              <input type="date" class="form-control form-control-sm" id="from-date" disabled/>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Gender</label>
-                              <select class="form-select form-select-sm">
+                              <select class="form-select form-select-sm" disabled>
                                 <option selected class="text-muted">Select</option>
                                 <option value="Option 1">Male</option>
                                 <option value="Option 2">Female</option>
@@ -317,7 +317,7 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Current Risk level</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
+                              <select class="form-select form-select-sm" aria-label="Default select example" disabled>
                                 <option selected class="text-muted">select</option>
                                 <option value="Active">High</option>
                                 <option value="Pending">Moderate</option>
@@ -351,9 +351,25 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="from-date">Best time to reach</label>
-                              <input type="time" class="form-control form-control-sm" id="from-date" />
+                              <input type="time" class="form-control form-control-sm" id="from-date" disabled />
                             </div>
+                            
                           </form>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne11"
+                          aria-expanded="false" aria-controls="flush-collapseOne">
+                          Care Team
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne11" class="accordion-collapse collapse bg-info"
+                        data-bs-parent="#accordionFlushExample-parent">
+                        <div class="accordion-body">
                           <div class="row mt-3 bg-white px-0 mx-0">
                             <div class="col-12 grid-margin">
                               <div class=" d-flex justify-content-between align-items-center">
@@ -496,6 +512,14 @@
                             <label for="from-date">Contact Number</label>
                             <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
                           </div>
+                          <div class="col-12 d-flex justify-content-between mt-5">
+                            <button class="btn btn-danger btn-sm">
+                                Clear
+                            </button>
+                            <button class="btn btn-primary btn-sm px-4">
+                                Save & Continue
+                            </button>
+                        </div>
                           </form>
                         </div>
                       </div>
@@ -538,6 +562,14 @@
                               </tbody>
                             </table>
                           </div>
+                          <div class="col-12 d-flex justify-content-between mt-5">
+                            <button class="btn btn-danger btn-sm">
+                                Clear
+                            </button>
+                            <button class="btn btn-primary btn-sm px-4">
+                                Save & Continue
+                            </button>
+                        </div>
                         </div>
                       </div>
                     </div>
@@ -682,41 +714,132 @@
                         data-bs-parent="#accordionFlushExample-parent">
                         <div class="accordion-body">
                           <div class="table-responsive care-manager-table">
-                            <table class="table table-bordered table-striped table-hover">
-                              <thead>
-                                <tr class="text-white">
-                                  <th>Test</th>
-                                  <th>Components</th>
-                                  <th>Ionic</th>
-                                  <th>CPT</th>
-                                  <th>Date of Service</th>
-                                  <th>Result</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Name of test</td>
-                                  <td>lorem ipsum dolor cando ispum alinga </td>
-                                  <td>1234122</td>
-                                  <td>Richard</td>
-                                  <td>DD/MM/YYYY</td>
-                                  <td>Negative</td>
-                                </tr>
-                                <tr>
-                                  <td>Name of test</td>
-                                  <td>lorem ipsum dolor cando ispum alinga </td>
-                                  <td>4532312</td>
-                                  <td>Robert San</td>
-                                  <td>DD/MM/YYYY</td>
-                                  <td>Positive</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Lab results</button>
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Diagnostic results</button>
+                              </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                                tabindex="0">
+                                <div class="row">
+                                  <div class="col-12 grid-margin">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                          <h5>Lab results</h5>
+                                            <!-- <div class="d-flex">
+                                              <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1"
+                                                href="lab-add.html">
+                                                <i class="fa fa-plus me-2 fs-5"></i>Add lab results
+                                            </a>
+                                            </div> -->
+                  
+                                        </div>
+                                        <div class="table-responsive care-manager-table">
+                                          <table class="table table-bordered table-striped table-hover">
+                                            <thead>
+                                              <tr class="text-white">
+                                                <th>Patient Name</th>
+                                                <th>Document Name</th>
+                                                <th>Upload Document</th>
+                                                <th>Lab Type</th>
+                                                <th>Date</th>
+                                                <th>Provider</th>
+                                                <th>Comment</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>John</td>
+                                                <td>xxx-xxx-xxxx</td>
+                                                <td>Active</td>
+                                                <td>Type1</td>
+                                                <td>DD/MM/YYYY</td>
+                                                <td>Text</td>
+                                                <td>Text</td>
+                                              </tr>
+                                              <tr>
+                                                <td>John 1</td>
+                                                <td>xxx-xxx-xxxx</td>
+                                                <td>Active</td>
+                                                <td>Type2</td>
+                                                <td>DD/MM/YYYY</td>
+                                                <td>Text</td>
+                                                <td>Text</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="row">
+                                  <div class="col-12 grid-margin">
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <div class="card-title d-flex justify-content-between align-items-center">
+                                          <h5>Lab results</h5>
+                                          <!-- <div class="d-flex">
+                                            <a class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1"
+                                            href="lab-add.html">
+                                              <i class="fa fa-plus me-2 fs-5"></i>Add diagnostic results
+                                          </a>
+                                          </div> -->
+                  
+                                        </div>
+                                        <div class="table-responsive care-manager-table">
+                                          <table class="table table-bordered table-striped table-hover">
+                                            <thead>
+                                              <tr class="text-white">
+                                                <th>Patient Name</th>
+                                                <th>Document Name</th>
+                                                <th>Upload Document</th>
+                                                <th>Diagnostic Results</th>
+                                                <th>Date</th>
+                                                <th>Provider</th>
+                                                <th>Comment</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>John</td>
+                                                <td>xxx-xxx-xxxx</td>
+                                                <td>Active</td>
+                                                <td>Type1</td>
+                                                <td>DD/MM/YYYY</td>
+                                                <td>Text</td>
+                                                <td>Text</td>
+                                              </tr>
+                                              <tr>
+                                                <td>John 1</td>
+                                                <td>xxx-xxx-xxxx</td>
+                                                <td>Active</td>
+                                                <td>Type2</td>
+                                                <td>DD/MM/YYYY</td>
+                                                <td>Text</td>
+                                                <td>Text</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="accordion-item">
+                    <!-- <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
                           type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
@@ -749,7 +872,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="accordion-item">
                       <h2 class="accordion-header">
                         <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"

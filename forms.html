@@ -284,8 +284,8 @@
                       data-bs-target="#addModal">
                       <i class="fa fa-plus me-2 fs-5"></i>Add New Form
                     </button>
-                    <button type="button" class="btn btn-secondary btn-sm text-white ms-2 px-3">
-                      <i class="fa-regular fa-camera me-2"></i>Scan Document</button>
+                    <!-- <button type="button" class="btn btn-secondary btn-sm text-white ms-2 px-3">
+                      <i class="fa-regular fa-camera me-2"></i>Scan Document</button> -->
                     </div>
                   </div>
                   <div class="table-responsive care-manager-table">
@@ -385,7 +385,7 @@
             </div>
             <div class="modal-body">
               <form class="row g-3">
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                   <label for="status">Category</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">select</option>
@@ -394,9 +394,17 @@
                     <option value="Delayed">Health Screening</option>
                   </select>
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                   <label for="provider-type">Date of upload document</label>
                   <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="DD/MM/YYYY" disabled />
+                </div>
+                <div class="col-lg-4 col-sm-4 ">
+                  <label for="status">Order form</label>
+                  <select class="form-select form-select-sm" aria-label="Default select example">
+                    <option selected class="text-muted">select</option>
+                    <option value="Active">Fax</option>
+                    <option value="Pending">Email</option>
+                  </select>
                 </div>
                 <div class="col-12">
                   <label>Upload Document</label>
@@ -414,7 +422,7 @@
                   <input type="date" class="form-control form-control-sm" id="from-date" />
                 </div>
                 <div class="col-lg-4 col-sm-4 ">
-                  <label for="status">Comments</label>
+                  <label for="status">Source</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">select</option>
                     <option value="Active">Fax</option>
