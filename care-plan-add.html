@@ -300,11 +300,11 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="from-date">Date of Birth</label>
-                              <input type="date" class="form-control form-control-sm" id="from-date" disabled/>
+                              <input type="date" class="form-control form-control-sm" id="from-date" />
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Gender</label>
-                              <select class="form-select form-select-sm" disabled>
+                              <select class="form-select form-select-sm" >
                                 <option selected class="text-muted">Select</option>
                                 <option value="Option 1">Male</option>
                                 <option value="Option 2">Female</option>
@@ -317,7 +317,7 @@
                             </div>
                             <div class="col-lg-4 col-sm-4">
                               <label for="status">Current Risk level</label>
-                              <select class="form-select form-select-sm" aria-label="Default select example" disabled>
+                              <select class="form-select form-select-sm" aria-label="Default select example" >
                                 <option selected class="text-muted">select</option>
                                 <option value="Active">High</option>
                                 <option value="Pending">Moderate</option>
@@ -353,6 +353,14 @@
                               <label for="from-date">Best time to reach</label>
                               <input type="time" class="form-control form-control-sm" id="from-date" disabled />
                             </div>
+                            <div class="col-12 d-flex justify-content-between mt-5">
+                              <button class="btn btn-danger btn-sm">
+                                  Clear
+                              </button>
+                              <button class="btn btn-primary btn-sm px-4">
+                                  Save & Continue
+                              </button>
+                          </div>
                             
                           </form>
                           
@@ -562,14 +570,7 @@
                               </tbody>
                             </table>
                           </div>
-                          <div class="col-12 d-flex justify-content-between mt-5">
-                            <button class="btn btn-danger btn-sm">
-                                Clear
-                            </button>
-                            <button class="btn btn-primary btn-sm px-4">
-                                Save & Continue
-                            </button>
-                        </div>
+                          
                         </div>
                       </div>
                     </div>
@@ -893,7 +894,7 @@
                           </a>
                           </div>
                           <div class="table-responsive care-manager-table mt-2">
-                            <table class="table table-bordered table-striped table-hover">
+                            <table class="table table-bordered table-striped ">
                               <thead>
                                 <tr class="text-white">
                                   <th>Priority</th>
@@ -910,12 +911,13 @@
                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
                                   <td colspan="2">
                                   sit amet, consectetur adipiscing elit lobortis a nisi consequat, iaculis sodales quam<div class="table-responsive care-manager-table">
-                                    <table class="table table-bordered  table-hover">
-                                      <thead>
-                                        <tr class="text-white">
-                                          <th>Intervention</th>
-                                          <th>Due Date</th>
-                                          <th>Completed Date</th>
+                                    <div class="table-responsive care-manager-table mt-2">
+                                      <table class="table table-sm">
+                                      <thead class="">
+                                        <tr class="text-dark">
+                                          <th class="bg-white text-dark">Intervention</th>
+                                          <th class="bg-white text-dark">Due Date</th>
+                                          <th class="bg-white text-dark">Completed Date</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -926,6 +928,8 @@
                                         </tr>
                                       </tbody>
                                     </table>
+                                    </div>
+                                    
                                   </div></td>
                                   <td colspan="1">Pellentesque habitant morbi tristique</td>
                                   <td colspan="1">DD/MM/YYYY</td>
@@ -936,6 +940,7 @@
                                     <ul class="dropdown-menu">
                                       <li><a class="dropdown-item" href="#">View</a></li>
                                       <li><a class="dropdown-item" href="#">Edit</a></li>
+                                      <li><a class="dropdown-item" href="#">Complete</a></li>
                                     </ul>
                                   </div>
                                   </td>
@@ -945,12 +950,12 @@
                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
                                   <td colspan="2">
                                     sit amet, consectetur adipiscing elit lobortis a nisi consequat, iaculis sodales quam<div class="table-responsive care-manager-table">
-                                    <table class="table table-bordered  table-hover">
+                                    <table class="table border table-hover">
                                       <thead>
                                         <tr class="text-white">
-                                          <th>Intervention</th>
-                                          <th>Due Date</th>
-                                          <th>Completed Date</th>
+                                          <th class="bg-white text-dark">Intervention</th>
+                                          <th class="bg-white text-dark">Due Date</th>
+                                          <th class="bg-white text-dark">Completed Date</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -971,6 +976,7 @@
                                     <ul class="dropdown-menu">
                                       <li><a class="dropdown-item" href="#">View</a></li>
                                       <li><a class="dropdown-item" href="#">Edit</a></li>
+                                      <li><a class="dropdown-item" href="#">Complete</a></li>
                                     </ul>
                                   </div>
                                   </td>
