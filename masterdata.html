@@ -193,12 +193,12 @@
               <span class="menu-title">Tasks</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="transaction-entry.html">
               <i class="fa-solid fa-file-invoice-dollar menu-icon"></i>
               <span class="menu-title">Transaction Entry</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="memos.html">
               <i class="fa-regular fa-note-sticky menu-icon"></i>
@@ -270,309 +270,119 @@
           
           <div class="row">
             <div class="col-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">
-                    <h5>Master Data</h5>
-                  </div>
-                  <div class="accordion accordion-flush " id="accordionFlushExample-parent">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
-                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                          aria-expanded="false" aria-controls="flush-collapseOne">
-                          PCP
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse bg-info"
-                        data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">
-                          <form class="row g-3">
-                            <div class="col-lg-4 col-sm-6">
-                              <label>First Name<span class="text-danger"> *</span></label>
-                              <input type="text"
-                                  class="form-control form-control-sm"
-                                  placeholder="Text" />
+              
+              <nav class="mt-3">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">PCP</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Organization</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex justify-content-between align-items-center">
+                            <h5>PCP</h5>
+                            <div class="d-flex">
+                            <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
+                              data-bs-target="#addModal">
+                              <i class="fa fa-plus me-2 fs-5"></i>Add PCP
+                            </button>
+                            <!-- <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
+                           data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <i class="mdi mdi-filter me-2"></i>Filter</button> -->
+                            </div>
+                            
                           </div>
-                          <div class="col-lg-4 col-sm-6">
-                            <label>Last Name<span class="text-danger"> *</span></label>
-                            <input type="text"
-                                class="form-control form-control-sm"
-                                placeholder="Text" />
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                          <label>Organization<span class="text-danger"> *</span></label>
-                          <div class="input-group mb-2">
-                            <input type="text"
-                                class="form-control form-control-sm border-end-0"
-                                placeholder="Search to select race"
-                                aria-label="Username"
-                                aria-describedby="basic-addon1">
-                            <span
-                                class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                        </div>
-                      </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <label>Title</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <label>Name</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Enter Name" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <label>Address 1<span class="text-danger">
-                                        *</span></label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                                <label>Address 2</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>Country<span class="text-danger">
-                                        *</span></label>
-                                <select class="form-select form-select-sm">
-                                    <option selected>Select </option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>State<span class="text-danger">
-                                        *</span></label>
-                                <select class="form-select form-select-sm">
-                                    <option selected>Select </option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>City<span class="text-danger">
-                                        *</span></label>
-                                <select class="form-select form-select-sm">
-                                    <option selected>Select </option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>Zip Code<span class="text-danger">
-                                        *</span></label>
-                                <select class="form-select form-select-sm">
-                                    <option selected>Select </option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
-                                <label>Office</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
-                                <label>Other</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
-                                <label class=""></label>
-                                <select class="form-select form-select-sm">
-                                    <option selected>Cell </option>
-                                    <option value="Option 1">Option 1</option>
-                                    <option value="Option 2">Option 2</option>
-                                    <option value="Option 3">Option 3</option>
-                                    <option value="Option 4">Option 4</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
-                                <label>Fax</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <label>Email</label>
-                                <input type="email"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>Speciality</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>Practice</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>Taxonomy</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                            </div>
-                            <div class="col-lg-3 col-sm-6">
-                                <label>NPI</label>
-                                <input type="text"
-                                    class="form-control form-control-sm"
-                                    placeholder="Text" />
-                                <div class="text-end">
-                                    <a href="" class="text-decoration-none">NPI
-                                        Registry</a>
-                                </div>
-                            </div>
-                            <div class="col-12 d-flex justify-content-end mt-4">
-                              <button class="btn text-danger btn-sm me-3">
-                                  Clear
-                              </button>
-                              <button class="btn btn-primary btn-sm px-4">
-                                  Save 
-                              </button>
-                          </div>
-                          </form>
+                          <!-- <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Referral#</th>
+                                  <th>Referral Reason</th>
+                                  <th>Referral Provider</th>
+                                  <th>Status</th>
+                                  <th>Ins.Carrier</th>
+                                  <th>Effective Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>DD/MM/YYYY</td>
+                                </tr>
+                                <tr>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>DD/MM/YYYY</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div> -->
                         </div>
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed bg-primary text-white py-2 parent-accordion-btn"
-                          type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                          aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Referred 
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse bg-info"
-                        data-bs-parent="#accordionFlushExample-parent">
-                        <div class="accordion-body">
-                          <div class="row g-3">
-                            <div class="col-lg-2 col-sm-4">
-                              <label for="organization">Title</label>
-                              <input type="text" class="form-control form-control-sm" id="organization" placeholder="Title" />
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex justify-content-between align-items-center">
+                            <h5>Organization</h5>
+                            <div class="d-flex">
+                            <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
+                              data-bs-target="#addModal2">
+                              <i class="fa fa-plus me-2 fs-5"></i>Add Organization
+                            </button>
+                            <!-- <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
+                           data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <i class="mdi mdi-filter me-2"></i>Filter</button> -->
                             </div>
-                            <div class="col-lg-5 col-sm-4">
-                              <label for="provider-name">Name</label>
-                              <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Enter your name" />
-                            </div>
-                            <div class="col-lg-5 col-sm-4">
-                              <label for="provider-type">Organization</label>
-                              <div class="input-group mb-2">
-                                <input type="text"
-                                    class="form-control form-control-sm border-end-0"
-                                    placeholder="Search to select race"
-                                    aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                                <span
-                                    class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="contact-number">Address 1<span class="text-danger">*</span></label>
-                              <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 1" />
-                            </div>
-                            <div class="col-lg-6 col-sm-6">
-                              <label for="contact-number">Address 2<span class="text-danger">*</span></label>
-                              <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 2" />
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                              <label for="contact-number">Country<span class="text-danger">*</span></label>
-                              <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Country" />
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                              <label for="state">State<span class="text-danger">*</span></label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">State</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                              <label for="city">City<span class="text-danger">*</span></label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="City" />
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                              <label for="state">Zip Code<span class="text-danger">*</span></label>
-                              <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected class="text-muted">Zip Code</option>
-                                <option value="Active">Active</option>
-                                <option value="Pending">Pending</option>
-                                <option value="Delayed">Delayed</option>
-                                <option value="completed">completed</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-3 col-sm-4">
-                              <label for="city">Contact Number</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-3 col-sm-4">
-                              <label for="city">Email</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
-                            </div>
-                            <div class="col-lg-2 col-sm-4">
-                              <label for="city">Fax</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-2 col-sm-4">
-                              <label for="city">Other</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-2 col-sm-4">
-                              <label for="city">Office</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
-                            </div>
-                            <div class="col-lg-4 col-sm-4">
-                              <label for="city">NPI</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="NPI" />
-                              <a type="button" class="text-primary text-decoration-none d-flex justify-content-end align-items-center" ><small>NPI registry</small></a>
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                              <label for="city">Practice</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Practice" />
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                              <label for="city">Taxonomy</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Taxonomy" />
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                              <label for="city">Speciality</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Speciality" />
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                              <label for="city">UPIN</label>
-                              <input type="text" class="form-control form-control-sm" id="from-date" placeholder="UPIN" />
-                            </div>
-                            <div class="col-12 d-flex justify-content-end mt-4">
-                              <button class="btn text-danger btn-sm me-3">
-                                  Clear
-                              </button>
-                              <button class="btn btn-primary btn-sm px-4">
-                                  Save 
-                              </button>
+                            
                           </div>
-                          </div>
+                          <!-- <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Referral#</th>
+                                  <th>Referral Reason</th>
+                                  <th>Referral Provider</th>
+                                  <th>Status</th>
+                                  <th>Ins.Carrier</th>
+                                  <th>Created</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>Text</td>
+                                </tr>
+                                <tr>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>Text</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>xxx-xxx-xxxx</td>
+                                  <td>Text</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div> -->
                         </div>
                       </div>
                     </div>
@@ -581,124 +391,7 @@
               </div>
             </div>
           </div>
-          <nav class="mt-3">
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">PCP</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Organisation</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-              <div class="row">
-                <div class="col-12 grid-margin">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title d-flex justify-content-between align-items-center">
-                        <h5>PCP</h5>
-                        <div class="d-flex">
-                        <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                          data-bs-target="#addModal">
-                          <i class="fa fa-plus me-2 fs-5"></i>Add PCP
-                        </button>
-                        <!-- <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
-                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                      <i class="mdi mdi-filter me-2"></i>Filter</button> -->
-                        </div>
-                        
-                      </div>
-                      <div class="table-responsive care-manager-table">
-                        <table class="table table-bordered table-striped table-hover">
-                          <thead>
-                            <tr class="text-white">
-                              <th>Referral#</th>
-                              <th>Referral Reason</th>
-                              <th>Referral Provider</th>
-                              <th>Status</th>
-                              <th>Ins.Carrier</th>
-                              <th>Effective Date</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>DD/MM/YYYY</td>
-                            </tr>
-                            <tr>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>DD/MM/YYYY</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-              <div class="row">
-                <div class="col-12 grid-margin">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="card-title d-flex justify-content-between align-items-center">
-                        <h5>Organisation</h5>
-                        <div class="d-flex">
-                        <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                          data-bs-target="#addModal2">
-                          <i class="fa fa-plus me-2 fs-5"></i>Add Organisation
-                        </button>
-                        <!-- <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
-                       data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                      <i class="mdi mdi-filter me-2"></i>Filter</button> -->
-                        </div>
-                        
-                      </div>
-                      <div class="table-responsive care-manager-table">
-                        <table class="table table-bordered table-striped table-hover">
-                          <thead>
-                            <tr class="text-white">
-                              <th>Referral#</th>
-                              <th>Referral Reason</th>
-                              <th>Referral Provider</th>
-                              <th>Status</th>
-                              <th>Ins.Carrier</th>
-                              <th>Created</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Text</td>
-                            </tr>
-                            <tr>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>Text</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>xxx-xxx-xxxx</td>
-                              <td>Text</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
@@ -722,13 +415,19 @@
           </div>
           <div class="modal-body">
             <form class="row g-3">
-              <div class="col-lg-4 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
+                <label>Title<span class="text-danger"> *</span></label>
+                <input type="text"
+                    class="form-control form-control-sm"
+                    placeholder="Text" />
+            </div>
+              <div class="col-lg-3 col-sm-6">
                 <label>First Name<span class="text-danger"> *</span></label>
                 <input type="text"
                     class="form-control form-control-sm"
                     placeholder="Text" />
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-3 col-sm-6">
               <label>Last Name<span class="text-danger"> *</span></label>
               <input type="text"
                   class="form-control form-control-sm"
@@ -746,18 +445,7 @@
                   class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
           </div>
         </div>
-              <div class="col-lg-6 col-sm-6">
-                  <label>Title</label>
-                  <input type="text"
-                      class="form-control form-control-sm"
-                      placeholder="Text" />
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                  <label>Name</label>
-                  <input type="text"
-                      class="form-control form-control-sm"
-                      placeholder="Enter Name" />
-              </div>
+              
               <div class="col-lg-6 col-sm-6">
                   <label>Address 1<span class="text-danger">
                           *</span></label>
@@ -849,25 +537,31 @@
                       class="form-control form-control-sm"
                       placeholder="Text" />
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
                   <label>Speciality</label>
                   <input type="text"
                       class="form-control form-control-sm"
                       placeholder="Text" />
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
                   <label>Practice</label>
                   <input type="text"
                       class="form-control form-control-sm"
                       placeholder="Text" />
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
                   <label>Taxonomy</label>
                   <input type="text"
                       class="form-control form-control-sm"
                       placeholder="Text" />
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-2 col-sm-6">
+                <label>UPIN</label>
+                <input type="text"
+                    class="form-control form-control-sm"
+                    placeholder="Text" />
+            </div>
+              <div class="col-lg-4 col-sm-6">
                   <label>NPI</label>
                   <input type="text"
                       class="form-control form-control-sm"
@@ -894,30 +588,32 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Add Organisation</h6>
+            <h6 class="modal-title" id="exampleModalLabel">Add Organization</h6>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="row g-3">
-              <div class="col-lg-2 col-sm-4">
-                <label for="organization">Title</label>
-                <input type="text" class="form-control form-control-sm" id="organization" placeholder="Title" />
-              </div>
-              <div class="col-lg-5 col-sm-4">
-                <label for="provider-name">Name</label>
-                <input type="text" class="form-control form-control-sm" id="inputPassword2" placeholder="Enter your name" />
-              </div>
-              <div class="col-lg-5 col-sm-4">
-                <label for="provider-type">Organization</label>
-                <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="Enter Organization" />
+              <div class="col-lg-6 col-sm-6">
+                <label for="organization">Oganization Name</label>
+                <input type="text" class="form-control form-control-sm" id="organization" placeholder="Enter Name" />
               </div>
               <div class="col-lg-6 col-sm-6">
-                <label for="contact-number">Address 1<span class="text-danger">*</span></label>
-                <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 1" />
+                <label for="state">Organization Type</label>
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                  <option selected class="text-muted">State</option>
+                  <option value="Active">Active</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Delayed">Delayed</option>
+                  <option value="completed">completed</option>
+                </select>
               </div>
               <div class="col-lg-6 col-sm-6">
-                <label for="contact-number">Address 2<span class="text-danger">*</span></label>
-                <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Address 2" />
+                <label for="provider-name">Address 1<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm" placeholder="Address 1" />
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <label for="provider-type">Address 2</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Address 2" />
               </div>
               <div class="col-lg-3 col-sm-3">
                 <label for="contact-number">Country<span class="text-danger">*</span></label>
@@ -934,59 +630,38 @@
                 </select>
               </div>
               <div class="col-lg-3 col-sm-3">
-                <label for="city">City<span class="text-danger">*</span></label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="City" />
+                <label for="contact-number">City<span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="City" />
               </div>
               <div class="col-lg-3 col-sm-3">
                 <label for="state">Zip Code<span class="text-danger">*</span></label>
                 <select class="form-select form-select-sm" aria-label="Default select example">
-                  <option selected class="text-muted">Zip Code</option>
+                  <option  class="text-muted">Zip Code</option>
                   <option value="Active">Active</option>
                   <option value="Pending">Pending</option>
                   <option value="Delayed">Delayed</option>
                   <option value="completed">completed</option>
                 </select>
               </div>
-              <div class="col-lg-3 col-sm-4">
+              <div class="col-lg-3 col-sm-3">
                 <label for="city">Contact Number</label>
                 <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
               </div>
-              <div class="col-lg-3 col-sm-4">
+              <div class="col-lg-3 col-sm-3">
                 <label for="city">Email</label>
                 <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Email" />
               </div>
-              <div class="col-lg-2 col-sm-4">
-                <label for="city">Fax</label>
+              <div class="col-lg-2 col-sm-2">
+                <label for="city">Org ID</label>
                 <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
               </div>
-              <div class="col-lg-2 col-sm-4">
-                <label for="city">Other</label>
+              <div class="col-lg-2 col-sm-2">
+                <label for="city">Org NPI</label>
                 <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
               </div>
-              <div class="col-lg-2 col-sm-4">
-                <label for="city">Office</label>
+              <div class="col-lg-2 col-sm-2">
+                <label for="city">Org CLIA</label>
                 <input type="text" class="form-control form-control-sm" id="from-date" placeholder="xxx-xxx-xxxx" />
-              </div>
-              <div class="col-lg-4 col-sm-4">
-                <label for="city">NPI</label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="NPI" />
-                <a type="button" class="text-primary text-decoration-none d-flex justify-content-end align-items-center" ><small>NPI registry</small></a>
-              </div>
-              <div class="col-lg-2 col-sm-3">
-                <label for="city">Practice</label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Practice" />
-              </div>
-              <div class="col-lg-2 col-sm-3">
-                <label for="city">Taxonomy</label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Taxonomy" />
-              </div>
-              <div class="col-lg-2 col-sm-3">
-                <label for="city">Speciality</label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="Speciality" />
-              </div>
-              <div class="col-lg-2 col-sm-3">
-                <label for="city">UPIN</label>
-                <input type="text" class="form-control form-control-sm" id="from-date" placeholder="UPIN" />
               </div>
             </div>
           </div>

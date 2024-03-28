@@ -198,12 +198,12 @@
               <span class="menu-title">Tasks</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="transaction-entry.html">
               <i class="fa-solid fa-file-invoice-dollar menu-icon"></i>
               <span class="menu-title">Transaction Entry</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="memos.html">
               <i class="fa-regular fa-note-sticky menu-icon"></i>
@@ -564,17 +564,27 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="search">ICD 10</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Search" />
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Procedure Codes</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Auth Status</label>
@@ -585,7 +595,7 @@
                   </select>
                 </div>
                 <div class="col-lg-4 col-sm-4">
-                  <label for="auth">Max Autharization</label>
+                  <label for="auth">Authorization</label>
                   <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                 </div>
                 <div class="col-lg-4 col-sm-4">
@@ -594,7 +604,15 @@
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="auth">Organization</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                   <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a> -->
                 </div>
                 <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-info" id="addorganization">
@@ -874,13 +892,15 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Procedure Codes</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Open this select menu</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Auth Status</label>
@@ -890,11 +910,15 @@
                     <option value="Pending">Not approved</option>
                   </select>
                 </div>
-                <div class="col-lg-4 col-sm-4">
-                  <label for="auth">Autharization</label>
+                <div class="col-lg-3 col-sm-4">
+                  <label for="auth"> Max Authorization</label>
                   <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                 </div>
-                <div class="col-lg-4 col-sm-4">
+                <div class="col-lg-3 col-sm-4">
+                  <label for="auth">Authorization</label>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                </div>
+                <div class="col-lg-3 col-sm-4">
                   <label for="status">INS Carrier</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">Open this select menu</option>
@@ -904,9 +928,17 @@
                     <option value="completed">completed</option>
                   </select>
                 </div>
-                <div class="col-lg-4 col-sm-4">
+                <div class="col-lg-3 col-sm-4">
                   <label for="auth">Organization</label>
-                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                   <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a> -->
                 </div>
                 <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="addorganization">

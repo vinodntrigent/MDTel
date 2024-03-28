@@ -198,12 +198,12 @@
               <span class="menu-title">Tasks</span>
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="transaction-entry.html">
               <i class="fa-solid fa-file-invoice-dollar menu-icon"></i>
               <span class="menu-title">Transaction Entry</span>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="memos.html">
               <i class="fa-regular fa-note-sticky menu-icon"></i>
@@ -275,89 +275,148 @@
           
           <div class="row">
             <div class="col-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title d-flex justify-content-between align-items-center">
-                    <h5>Forms</h5>
-                    <div class="d-flex">
-                      <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
-                      data-bs-target="#addModal">
-                      <i class="fa fa-plus me-2 fs-5"></i>Add New Form
-                    </button>
-                    <!-- <button type="button" class="btn btn-secondary btn-sm text-white ms-2 px-3">
-                      <i class="fa-regular fa-camera me-2"></i>Scan Document</button> -->
+              
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Forms</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">IRA</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex justify-content-between align-items-center">
+                            <h5>Forms</h5>
+                            <div class="d-flex">
+                              <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
+                              data-bs-target="#addModal">
+                              <i class="fa fa-plus me-2 fs-5"></i>Add New Form
+                            </button>
+                            <!-- <button type="button" class="btn btn-secondary btn-sm text-white ms-2 px-3">
+                              <i class="fa-regular fa-camera me-2"></i>Scan Document</button> -->
+                            </div>
+                          </div>
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th class="align-items-start">Category</th>
+                                  <th>Uploaded Document</th>
+                                  <th>Date of performance test</th>
+                                  <th>Comments</th>
+                                  <th>Provider</th>
+                                  <th>Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>type 1</td>
+                                  <td>Readable Doc</td>
+                                  <td>02/02/2023</td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                  <td>Richard Roe</td>
+                                  <td><div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Select
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">View</a></li>
+                                      <li><a class="dropdown-item" href="#">Download</a></li>
+                                      <li><a class="dropdown-item" href="#">Print</a></li>
+                                    </ul>
+                                  </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>type 2</td>
+                                  <td>Readable pdf</td>
+                                  <td>04/02/2023</td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                  <td>Adam Sandler</td>
+                                  <td><div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Select
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">View</a></li>
+                                      <li><a class="dropdown-item" href="#">Download</a></li>
+                                      <li><a class="dropdown-item" href="#">Print</a></li>
+                                    </ul>
+                                  </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>type 3</td>
+                                  <td>Readable pdf</td>
+                                  <td>08/02/2023</td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                  <td>Jose Butler</td>
+                                  <td><div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Select
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">View</a></li>
+                                      <li><a class="dropdown-item" href="#">Download</a></li>
+                                      <li><a class="dropdown-item" href="#">Print</a></li>
+                                    </ul>
+                                  </div>
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="table-responsive care-manager-table">
-                    <table class="table table-bordered table-striped table-hover">
-                      <thead>
-                        <tr class="text-white">
-                          <th class="align-items-start">Category</th>
-                          <th>Uploaded Document</th>
-                          <th>Date of performance test</th>
-                          <th>Comments</th>
-                          <th>Provider</th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>type 1</td>
-                          <td>Readable Doc</td>
-                          <td>02/02/2023</td>
-                          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                          <td>Richard Roe</td>
-                          <td><div class="dropdown">
-                            <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Select
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex justify-content-between align-items-center">
+                            <h5>Initial Risk Assessment</h5>
+                            <!-- <div class="d-flex">
+                            <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
+                              data-bs-target="#addModal2">
+                              <i class="fa fa-plus me-2 fs-5"></i>Add Referral-Out
                             </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" href="#">Download</a></li>
-                              <li><a class="dropdown-item" href="#">Print</a></li>
-                            </ul>
+                            <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
+                           data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <i class="mdi mdi-filter me-2"></i>Filter</button>
+                            </div> -->
+                            
                           </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>type 2</td>
-                          <td>Readable pdf</td>
-                          <td>04/02/2023</td>
-                          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                          <td>Adam Sandler</td>
-                          <td><div class="dropdown">
-                            <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Select
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" href="#">Download</a></li>
-                              <li><a class="dropdown-item" href="#">Print</a></li>
-                            </ul>
+                          <div class="table-responsive care-manager-table">
+                            <table class="table table-bordered table-striped table-hover">
+                              <thead>
+                                <tr class="text-white">
+                                  <th>Name of the Assessment</th>
+                                  <th>Completion date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><a href="#">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</a></td>
+                                  <td>DD-MM-YYY</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="#">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</a></td>
+                                  <td>DD-MM-YYY</td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>type 3</td>
-                          <td>Readable pdf</td>
-                          <td>08/02/2023</td>
-                          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                          <td>Jose Butler</td>
-                          <td><div class="dropdown">
-                            <button class="btn btn-outline-primary dropdown-toggle btn-sm px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Select
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">View</a></li>
-                              <li><a class="dropdown-item" href="#">Download</a></li>
-                              <li><a class="dropdown-item" href="#">Print</a></li>
-                            </ul>
-                          </div>
-                          </td>
-                        </tr>
-                        
-                      </tbody>
-                    </table>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -385,26 +444,19 @@
             </div>
             <div class="modal-body">
               <form class="row g-3">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                   <label for="status">Category</label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">select</option>
                     <option value="Active">Advance Directive</option>
                     <option value="Pending">Intake forms</option>
                     <option value="Delayed">Health Screening</option>
+                    <option value="1">Order form</option>
                   </select>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                   <label for="provider-type">Date of upload document</label>
                   <input type="text" class="form-control form-control-sm" id="provider-type" placeholder="DD/MM/YYYY" disabled />
-                </div>
-                <div class="col-lg-4 col-sm-4 ">
-                  <label for="status">Order form</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">select</option>
-                    <option value="Active">Fax</option>
-                    <option value="Pending">Email</option>
-                  </select>
                 </div>
                 <div class="col-12">
                   <label>Upload Document</label>
