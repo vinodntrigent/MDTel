@@ -886,13 +886,15 @@
                 
                 <div class="col-lg-6 col-sm-6">
                   <label for="search">ICD 10</label>
-                  <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected class="text-muted">Select</option>
-                    <option value="Active">Active</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Delayed">Delayed</option>
-                    <option value="completed">completed</option>
-                  </select>
+                  <div class="input-group">
+                    <input type="search"
+                        class="form-control form-control-sm border-end-0"
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span
+                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
+                </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="status">Procedure Codes</label>
