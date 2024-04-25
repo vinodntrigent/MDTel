@@ -273,7 +273,7 @@
               
               <nav class="mt-3">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">PCP</button>
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Primary Care Provider</button>
                   <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Organization</button>
                 </div>
               </nav>
@@ -284,11 +284,11 @@
                       <div class="card">
                         <div class="card-body">
                           <div class="card-title d-flex justify-content-between align-items-center">
-                            <h5>PCP</h5>
+                            <h5>Primary Care Provider</h5>
                             <div class="d-flex">
                             <button class="btn btn-primary btn-sm d-flex align-items-center px-2 py-1" data-bs-toggle="modal"
                               data-bs-target="#addModal">
-                              <i class="fa fa-plus me-2 fs-5"></i>Add PCP
+                              <i class="fa fa-plus me-2 fs-5"></i>Add Primary Care Provider
                             </button>
                             <!-- <button type="button" class="btn btn-warning btn-sm text-white ms-2 px-3"
                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -296,38 +296,43 @@
                             </div>
                             
                           </div>
-                          <!-- <div class="table-responsive care-manager-table">
+                          <div class="table-responsive care-manager-table">
                             <table class="table table-bordered table-striped table-hover">
                               <thead>
                                 <tr class="text-white">
-                                  <th>Referral#</th>
-                                  <th>Referral Reason</th>
-                                  <th>Referral Provider</th>
-                                  <th>Status</th>
-                                  <th>Ins.Carrier</th>
-                                  <th>Effective Date</th>
+                                  <!-- <th></th> -->
+                                  <th>First Name</th>
+                                  <!-- <th>Memos<i class="mdi mdi-menu-down"></i></th> -->
+                                  <th>Last Name</th>
+                                  <th class="action-col">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>DD/MM/YYYY</td>
+                                  <!-- <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> -->
+                                  <td>John</td>
+                                  <!-- <td>John A Summers</td> -->
+                                  <td>Summer</td>
+                                  <td class="d-flex pb-3 action-col">
+                                    <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                                    <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>DD/MM/YYYY</td>
+                                  <!-- <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> -->
+                                  <td>Lester</td>
+                                  <!-- <td>John A Summers</td> -->
+                                  <td>Wick</td>
+                                  <td class="d-flex action-col ">
+                                    <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                                    <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
-                          </div> -->
+                          </div>
+                           
+                          
                         </div>
                       </div>
                     </div>
@@ -351,38 +356,41 @@
                             </div>
                             
                           </div>
-                          <!-- <div class="table-responsive care-manager-table">
+                          <div class="table-responsive care-manager-table">
                             <table class="table table-bordered table-striped table-hover">
                               <thead>
                                 <tr class="text-white">
-                                  <th>Referral#</th>
-                                  <th>Referral Reason</th>
-                                  <th>Referral Provider</th>
-                                  <th>Status</th>
-                                  <th>Ins.Carrier</th>
-                                  <th>Created</th>
+                                  <!-- <th></th> -->
+                                  <th>Organization Name</th>
+                                  <!-- <th>Memos<i class="mdi mdi-menu-down"></i></th> -->
+                                  <th>City</th>
+                                  <th class="action-col">Action</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>Text</td>
+                                  <!-- <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> -->
+                                  <td >Lester Corp</td>
+                                  <!-- <td>John A Summers</td> -->
+                                  <td>Ohio</td>
+                                  <td class="d-flex pb-3 action-col">
+                                    <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                                    <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                                  </td>
                                 </tr>
                                 <tr>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>Text</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>xxx-xxx-xxxx</td>
-                                  <td>Text</td>
+                                  <!-- <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td> -->
+                                  <td >Lambda Pvt ltd</td>
+                                  <!-- <td>John A Summers</td> -->
+                                  <td>San Diego</td>
+                                  <td class="d-flex action-col">
+                                    <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                                    <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
-                          </div> -->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -410,7 +418,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">Add PCP</h6>
+            <h6 class="modal-title" id="exampleModalLabel">Add Primary Care Provider</h6>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">

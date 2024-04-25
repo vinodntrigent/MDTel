@@ -339,8 +339,50 @@
                           </tbody>
                         </table>
                       </div>
+                      
                     </div>
                   </div>
+                  <!-- <div class="table-responsive mt-5">
+                    <table class="table table-sm">
+                     <thead>
+                       <tr class="text-white">
+                         <th>Referral#</th>
+                         <th>Referral Reason</th>
+                         <th>Referral Provider</th>
+                         <th>Status</th>
+                         <th>Ins.Carrier</th>
+                         <th>Effective Date</th>
+                         <th>Action</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>Text</td>
+                         <td>Text</td>
+                         <td>Text</td>
+                         <td>xxx-xxx-xxxx</td>
+                         <td>xxx-xxx-xxxx</td>
+                         <td>DD/MM/YYYY</td>
+                         <td class="d-flex">
+                           <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                           <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td>Text</td>
+                         <td>Text</td>
+                         <td>Text</td>
+                         <td>xxx-xxx-xxxx</td>
+                         <td>xxx-xxx-xxxx</td>
+                         <td>DD/MM/YYYY</td>
+                         <td class="d-flex">
+                           <button class="btn btn-sm btn-secondary ms-1 "><i class="mdi mdi-pencil fs-6"></i></button>
+                           <button class="btn btn-sm btn-danger ms-1 "><i class="mdi mdi-delete fs-6"></i></button>
+                         </td>
+                       </tr>
+                     </tbody>
+                    </table>
+                 </div> -->
                 </div>
               </div>
             </div>
@@ -461,15 +503,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="provider-type">Referred By<span class="text-danger">*</span></label>
-                  <div class="input-group">
-                    <input type="search"
-                        class="form-control form-control-sm border-end-0"
-                        placeholder="Search"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span
-                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                </div>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                   <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a> -->
                 </div>
                 <!-- <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-info" id="referredby">
@@ -617,7 +651,7 @@
                   <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                 </div>
                 <div class="col-lg-3 col-sm-4">
-                  <label for="auth">Authorization</label>
+                  <label for="auth">Authorization ID</label>
                   <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                 </div>
                 <div class="col-lg-3 col-sm-4">
@@ -626,15 +660,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-4">
                   <label for="auth">Organization</label>
-                  <div class="input-group">
-                    <input type="search"
-                        class="form-control form-control-sm border-end-0"
-                        placeholder="Search"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span
-                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                </div>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                   <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a> -->
                 </div>
                 <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-info" id="addorganization">
@@ -769,15 +795,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-6">
                   <label for="provider-name">Referred To<span class="text-danger">*</span></label>
-                  <div class="input-group">
-                    <input type="search"
-                        class="form-control form-control-sm border-end-0"
-                        placeholder="Search"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span
-                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                </div>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                   <!-- <a class="text-primary text-decoration-none d-fl ex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#referredby" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Referred</small></a> -->
                 </div>
                 <div class="col-lg-6 col-sm-6">
@@ -936,7 +954,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-sm-4">
-                  <label for="auth">Authorization</label>
+                  <label for="auth">Authorization ID</label>
                   <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                 </div>
                 <div class="col-lg-4 col-sm-4">
@@ -945,15 +963,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-4">
                   <label for="auth">Organization</label>
-                  <div class="input-group">
-                    <input type="search"
-                        class="form-control form-control-sm border-end-0"
-                        placeholder="Search"
-                        aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <span
-                        class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
-                </div>
+                  <input type="text" class="form-control form-control-sm" id="contact-number" placeholder="Text" />
                   <!-- <a class="text-primary text-decoration-none d-flex justify-content-end align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#addorganization" aria-expanded="false" aria-controls="collapseWidthExample"><small><i class="fa fa-plus me-1 fs-6"></i>Add Organization</small></a> -->
                 </div>
                 <div class="row mx-0 px-2 pb-3 g-3 collapse collapse-horizontal bg-blu" id="addorganization">

@@ -611,6 +611,8 @@ textarea:focus,input,select{
     color: white;
     background-color: #3c7edc;
   }
+
+
   .sidebar-icon-only .sidebar .nav .nav-item .nav-link {
     display: block;
     text-align: center;
@@ -848,6 +850,16 @@ html {
   background-size: cover;
 }
 
+
+.errorpg{
+  font-size:120px;
+  font-weight: 600;
+
+}
+.text-muted{
+  color: #9c9fa6;
+}
+
 .form-signin {
   width: 400px;
   margin: 75px 75px 0;
@@ -858,6 +870,14 @@ html {
 .form-signin1{
   width: 400px;
   margin: 75px 75px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.form-signin2{
+  width: 1250px;
+  /* height: px; */
+  margin: 20px 75px 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -1041,4 +1061,15 @@ html {
 .nav-tabs .nav-link.active{
   background-color: #3c7edc;
   color: #fff;
+}
+
+
+#pagination:focus{
+  border: 5px #3567d3;
+}
+
+
+/* table */
+.action-col{
+  width: 100px;
 }

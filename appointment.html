@@ -361,7 +361,7 @@
             <div class="modal-body">
               <form class="row g-3">
                 <div class="col-lg-4 col-sm-4">
-                  <label for="organization">Visit</label>
+                  <label for="organization">Visit<span class="text-danger"> *</span></label>
                   <input type="text" class="form-control form-control-sm" id="organization" placeholder="Text" />
                 </div>
                 <div class="col-lg-4 col-sm-4">
@@ -408,7 +408,7 @@
                   </select>
                 </div>
                 <div class="col-lg-4 col-sm-4">
-                  <label for="status">Reason / Appt Type</label>
+                  <label for="status">Reason / Appt Type<span class="text-danger"> *</span></label>
                   <select class="form-select form-select-sm" aria-label="Default select example">
                     <option selected class="text-muted">Select</option>
                     <option value="Active">Annual Exam</option>
@@ -432,10 +432,10 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-                Close
+                Clear
               </button>
               <button type="button" class="btn btn-primary btn-sm px-5 ms-3">
-                Ok
+                Save & Continue
               </button>
             </div>
           </div>
