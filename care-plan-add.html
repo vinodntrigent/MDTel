@@ -353,6 +353,25 @@
                               <label for="from-date">Best time to reach</label>
                               <input type="time" class="form-control form-control-sm" id="from-date" disabled />
                             </div>
+                            <div class="col-lg-4 col-sm-4">
+                              <label for="status">Enrollment Status</label>
+                              <div class="d-flex mt-1">
+                                
+                              <select class="form-select form-select-sm" aria-label="Default select example" >
+                                <option selected class="text-muted">select</option>
+                                <option value="Active">Pending</option>
+                                <option value="Pending">Enrolled</option>
+                                <option value="Delayed">Dis-enrolled</option>
+                              </select>
+                              <input type="date" class="form-control form-control-sm" id="from-date"  />
+                              </div>
+                              
+                              
+                            </div>
+                            <div class="col-lg-4 col-sm-4">
+                              <label for="from-date">Due Date</label>
+                              <input type="date" class="form-control form-control-sm mt-1" id="from-date" />
+                            </div>
                             <div class="col-12 d-flex justify-content-between mt-5">
                               <button class="btn btn-danger btn-sm">
                                   Clear
@@ -1091,10 +1110,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Ok
+              Save & Continue
             </button>
           </div>
         </div>
@@ -1121,10 +1140,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Save
+              Save & Continue
             </button>
           </div>
         </div>

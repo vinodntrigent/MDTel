@@ -301,11 +301,26 @@
           </div>
           <div class="modal-body">
             <form class="row g-3">
+              <div class="col-lg-1 col-sm-6 title-col  ">
+                <label>Title</label>
+                <select class="form-select form-select-sm ">
+                    <option selected class="text-muted">Select</option>
+                    <option value="Option 1">MR</option>
+                    <option value="Option 2">MRS</option>
+                    <option value="Option 3">Miss</option>
+                    <option value="Option 3">Ms</option>
+                    <option value="Option 3">Dr</option>
+                    <option value="Option 3">Jr</option>
+                    <option value="Option 3">Sr</option>
+                    <option value="Option 3">II</option>
+                    <option value="Option 3">I</option>
+                </select>
+            </div>
               <div class="col-lg-4 col-sm-6">
                 <label for="organization">First Name<span class="text-danger"> *</span></label>
                 <input type="text" class="form-control form-control-sm" placeholder="Text" />
               </div>
-              <div class="col-lg-4 col-sm-6">
+              <div class="col-lg-3 col-sm-6">
                 <label for="provider-name">Middle Name</label>
                 <input type="text" class="form-control form-control-sm"  placeholder="Text" />
               </div>
@@ -447,7 +462,7 @@
                 </select>
               </div>
               <div class="col-lg-4 col-sm-6">
-                <label for="provider-type">PCP</label>
+                <label for="provider-type">Primary Care Provider</label>
                 <select class="form-select form-select-sm" aria-label="Default select example">
                   <option selected class="text-muted">Select</option>
                   <option value="Provider Type1">Provider Type1</option>
@@ -478,10 +493,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm">
-              Ok
+              Save & Continue
             </button>
           </div>
         </div>

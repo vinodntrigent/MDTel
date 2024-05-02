@@ -448,7 +448,7 @@
                   class="form-control form-control-sm border-end-0"
                   placeholder="Search"
                   aria-label="Username"
-                  aria-describedby="basic-addon1">
+                  aria-describedby="basic-addon1" disabled>
               <span
                   class="fa fa-search bg-white border-start-0 input-group-text fs-6 py-0"></span>
           </div>
@@ -511,14 +511,8 @@
                       <option value="Option 4">Option 4</option>
                   </select>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                  <label>Office</label>
-                  <input type="text"
-                      class="form-control form-control-sm"
-                      placeholder="xxx-xxx-xxxx" />
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                  <label>Other</label>
+              <div class="col-lg-4 col-sm-6">
+                  <label>Contact Number</label>
                   <input type="text"
                       class="form-control form-control-sm"
                       placeholder="xxx-xxx-xxxx" />
@@ -533,13 +527,13 @@
                       <option value="Option 4">Option 4</option>
                   </select>
               </div> -->
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-4 col-sm-4">
                   <label>Fax</label>
                   <input type="text"
                       class="form-control form-control-sm"
                       placeholder="xxx-xxx-xxxx" />
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-4 col-sm-4">
                   <label>Email</label>
                   <input type="email"
                       class="form-control form-control-sm"
@@ -583,10 +577,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Save
+              Save & Continue
             </button>
           </div>
         </div>
@@ -602,17 +596,20 @@
           <div class="modal-body">
             <div class="row g-3">
               <div class="col-lg-6 col-sm-6">
-                <label for="organization">Oganization Name</label>
+                <label for="organization">Oganization Name<span class="text-danger">*</span></label>
                 <input type="text" class="form-control form-control-sm" id="organization" placeholder="Enter Name" />
               </div>
               <div class="col-lg-6 col-sm-6">
                 <label for="state">Organization Type</label>
                 <select class="form-select form-select-sm" aria-label="Default select example">
-                  <option selected class="text-muted">State</option>
+                  <option selected class="text-muted">Hospitals</option>
                   <option value="Active">Active</option>
                   <option value="Pending">Pending</option>
                   <option value="Delayed">Delayed</option>
-                  <option value="completed">completed</option>
+                  <option value="completed">Clinic</option>
+                  <option value="2">Specialty clinic</option>
+                  <option value="3">Home health</option>
+                  <option value="4">Labs</option>
                 </select>
               </div>
               <div class="col-lg-6 col-sm-6">
@@ -675,10 +672,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Save
+              Save & Continue
             </button>
           </div>
         </div>
@@ -714,10 +711,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn text-danger btn-sm " data-bs-dismiss="modal">
-              Cancel
+              Clear
             </button>
             <button type="button" class="btn btn-primary btn-sm px-5">
-              Save
+              Save & Continue
             </button>
           </div>
         </div>
